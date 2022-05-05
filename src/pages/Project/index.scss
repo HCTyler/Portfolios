@@ -1,0 +1,109 @@
+#Project{
+  background-image: url(./image/background.jpg);
+  height:210vh;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.project {
+    flex: row;
+    padding: 10px;
+    height: 40vh;
+    // background-color: rgb(195, 195, 195);
+  header {
+    padding: 1rem;
+    background: rgba(114, 130, 157, 0.897);
+    color: #fff;
+    top: initial;
+    width:25%
+  }
+}
+
+.projectPage{
+    display: flex;
+    justify-content: space-evenly;
+  p{
+    height: 100%;
+    // padding: 20px;
+    width: 30%;
+    text-align: left;
+    overflow-y: scroll;
+    color: rgb(226, 237, 247);
+  }
+  img{
+    height: 15rem;
+    padding: 5px;
+    width: 25rem;
+    justify-content: center;
+    object-fit:cover;
+  }
+   img:hover{
+    box-shadow: 2px 2px 10px rgb(255, 255, 255);
+    border-radius: 10px;}
+   img:active{
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);}
+}
+
+
+.projectButtons button{
+    border:thin;
+    background:rgb(242, 239, 239);
+    padding: 1rem 1rem;
+    margin: 2rem 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    cursor:pointer;
+    border-radius: 20px;
+  img{
+    height: 2rem;
+    width: 2rem;}
+  a{
+    font-size: 1rem;}  
+}
+
+.projectButtons button:hover{
+  box-shadow: 2px 2px 20px rgb(98,98,98);
+  text-decoration: underline;
+}
+  
+
+
+// Media Queries
+@media all and (max-width: 1200px){
+.project img {
+  height: 10rem;
+  width: 10rem;
+}
+.projectButtons img{
+  display:none;
+}
+}
+
+@media all and (max-width:865px){
+  .projectButtons a{font-size: 1em;}
+  .projectPage p{
+    width: 50%;
+    font-size: 1em;
+  }
+}
+  
+@media all and (max-width:700px) {
+  .button{
+    font-size: 0;
+  }
+  .projectPage{
+    display:flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+  
+@media all and (max-width:431px){
+  .project img {display: none;}
+}
+  
+// Misc Styling
+.projectPage p::-webkit-scrollbar{
+  display:none
+}
