@@ -1,0 +1,54 @@
+//all element-only based styling goes in here. If you need to style a specific element from a specific folder, reference the class or id of the parent and nest the child element in it.
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+
+}
+body, html{
+  height: 100vh;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+  background-color: black;
+}
+a {
+  text-decoration: none;
+}
+
+// this is the hover effect on the svg- the fontawesomeicons------
+svg{
+  padding:1rem;
+  display: inline-block;
+  flex-direction: column;
+  position:relative;
+  // visibility: hidden;
+  // border: 1px solid red;
+}
+text{
+  // visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: bottom;
+  position: absolute;
+  font-size:0;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index: 2;
+  border:1em;
+  transition: font-size 1s;
+}
+a:hover > text{
+  visibility: visible;
+  overflow: visible;
+  font-size: 2rem;
+}
+a:active > text{
+  color:rgb(32, 32, 32)
+}
+a:hover > svg{
+  visibility: hidden;
+}
+// ----------------------------------------------------------------
+    

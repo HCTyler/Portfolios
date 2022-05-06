@@ -1,5 +1,4 @@
 import React from 'react'
-import "./icons.scss"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faHtml5, faCss3Alt,faJsSquare,faReact,faBootstrap} from "@fortawesome/free-brands-svg-icons"
 
@@ -9,34 +8,34 @@ function Skills() {
 <div className="skills">
     <h1>Language and Framework Proficiencies</h1>
     <ul>
-      <li>
-        <p>HTML</p>
+      <a>
+        <text>HTML</text>
         <FontAwesomeIcon icon={faHtml5} size="2xl"  shake/>
-      </li>
-      <li>
-        <p>CSS</p>
+      </a>
+      <a>
+        <text>CSS</text>
         <FontAwesomeIcon icon={faCss3Alt} size="2xl" fade />
-      </li>
-      <li>
-        <p>JavaScript</p>
+      </a>
+      <a>
+        <text>JavaScript</text>
         <FontAwesomeIcon icon={faJsSquare} size="2xl" beat />
-      </li>
-      <li>
-        <p>React</p>
+      </a>
+      <a>
+        <text>React</text>
         <FontAwesomeIcon icon={faReact} size="2xl" spin/>
-      </li>
-      <li>
-        <p>Bootstrap</p>
+      </a>
+      <a>
+        <text>Bootstrap</text>
         <FontAwesomeIcon icon={faBootstrap} size="2xl" bounce/>
-      </li>
+      </a>
     </ul>
 
     <h2>Additional Skill Proficiencies</h2>
     <ul>
-      <li>Github</li>
-      <li>Googling</li>
-      <li>Debugging and Testing</li>
-      <li>Teamwork</li>
+      <a>Github</a>
+      <a>Googang</a>
+      <a>Debugging and Testing</a>
+      <a>Teamwork</a>
     </ul>
 </div>
   )
