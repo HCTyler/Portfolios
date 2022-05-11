@@ -1,34 +1,29 @@
 #AboutMe{
-  height:100vh;
+  // height:100vh;
   display:flex;
-  justify-content: center;
+  justify-content: right;
+  background-color:rgb(232, 241, 241);
+  padding-top:5rem;
 }
 .about{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     position:relative;
-    background:rgba(85, 85, 85, 0.75);
-    border-radius: 0 0 5rem 5rem;
-    height:25vh;
+    border-radius: 0 0 0 5rem;
+    height:100%;
     width:75%;
     padding: 5% 2.5%;
-
-
+    border-bottom: 1px solid red;
+    border-left: 1px solid red;
   p, ul {
-    text-align: left;
+    text-align: right;
     line-height: 130%;
     font-size: 1.25em;
-    padding:0.1em;
     font-weight: 500;
-    color: rgba(230, 218, 218, 0.889);
-    width:80%;
+    color: rgb(0, 0, 0);
 }
   h1{
     font-size: 2em;
     font-weight: 900;
-    text-align: left;
+    text-align: right;
     color:rgba(230, 218, 218, 0.889);
-    // padding:1% 20%;
 }
 }

@@ -17,7 +17,7 @@ return (
       <p>
         <Typewriter
           options={{
-          strings: ["I am a Junior Front-End Developer.","I build things on the web.","I want to turn your ideas into reality!"],
+          strings: ["I am a Junior Front-End Developer.","I build things on the web.","I am always trying to learn.","I want to turn your ideas into reality!"],
           autoStart: true,
           loop: true,
           deleteSpeed: 50,
@@ -27,9 +27,9 @@ return (
         </Typewriter></p>
     </div>
 
-    <div className="landing">
-      <Link to="Project" smooth={true} duration={1000} offset={-40}><FontAwesomeIcon icon={faCircleArrowDown} size="2xl" beat/><text>Check out my projects!</text></Link>
-    </div>
+    <section>
+      <Link to="Project" smooth={true} duration={1000} offset={-40}><FontAwesomeIcon icon={faCircleArrowDown} size="2xl" beat/><text>Click me!</text></Link>
+    </section>
     <section>
         <a href="https://www.linkedin.com/in/evtyler" target="_blank">
           <FontAwesomeIcon icon={faLinkedin} size="2xl" bounce/><text>LinkedIn</text>

@@ -1,12 +1,13 @@
 import React from 'react'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faHtml5, faCss3Alt,faJsSquare,faReact,faBootstrap} from "@fortawesome/free-brands-svg-icons"
+import {faPeopleGroup,faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons'
 
 function Skills() {
   return (
     
 <div className="skills">
-    <h1>Language and Framework Proficiencies</h1>
+    <h2>Language and Framework Proficiencies</h2>
     <ul>
       <a>
         <text>HTML</text>
@@ -32,10 +33,14 @@ function Skills() {
 
     <h2>Additional Skill Proficiencies</h2>
     <ul>
-      <a>Github</a>
-      <a>Googang</a>
-      <a>Debugging and Testing</a>
-      <a>Teamwork</a>
+    <a>
+        <text>Googling</text>
+        <FontAwesomeIcon icon={faMagnifyingGlass} size="2xl" bounce/>
+      </a>
+      <a>
+        <text>Teamwork</text>
+        <FontAwesomeIcon icon={faPeopleGroup} size="2xl" bounce/>
+      </a>
     </ul>
 </div>
   )

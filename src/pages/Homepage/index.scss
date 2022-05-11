@@ -1,17 +1,18 @@
 .backgroundStyle {
-  background-image: url(./image/night.jpg);
+  background-image: url(./image/background.jpg);
   height:100vh;
   background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  color:azure;
   }
 
 .landing{
     position:static;
     height:100vh;
     display:flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: left;
     text-align: center;
     flex-direction: column;
@@ -20,25 +21,26 @@
     text-align: center;
     line-height: 130%;
     font-size: 1.5em;
-    color: rgba(255, 255, 255);
+    // color: rgb(255, 255, 255);
   }
   h1 {
     font-size: 3em;
     font-weight: 900;
     text-align: center;
-    color:rgba(255, 255, 255, 0.996);
+    // color:rgba(255, 255, 255, 0.996);
     padding:1% 20%
   }
   h2 {
     font-size: 2em;
     font-weight: 900;
     text-align: center;
-    color:rgba(255, 255, 255, 0.996);
+    // color:rgba(255, 255, 255, 0.996);
     padding:1% 20%
   }
   section {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
   a {
     position:relative;
@@ -47,9 +49,21 @@
     line-height: 130%;
     font-size: 110%;
     font-weight: 500;
-    width: 100%;
-    color: rgba(254, 255, 236, 0.889);
+    width: 10rem;
+    margin:0 5%;
+    // color: rgba(254, 255, 236, 0.889);
     cursor:pointer;
   }
+}
+
+.landing section:first-child{
+  // background-image: url(./image/night.jpg);
+  // height:10vh;
+  // background-position:center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-attachment: fixed;
+  background-color: black;
+
 }
 

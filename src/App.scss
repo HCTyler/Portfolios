@@ -1,4 +1,7 @@
 //all element-only based styling goes in here. If you need to style a specific element from a specific folder, reference the class or id of the parent and nest the child element in it.
+$textcolor:rgb(18, 18, 18);
+$texteffect:rgba(194, 194, 194, 0.25);
+
 
 * {
   padding: 0px;
@@ -9,10 +12,16 @@
 body, html{
   height: 100vh;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-  background-color: black;
+  // background:linear-gradient(to right, #cee5fb,#d3e7f9,#badef8,#cee5fb);
+  background-color:rgb(248, 251, 255);
+  color:$textcolor;
+  
 }
 a {
   text-decoration: none;
+}
+h1, h2{
+  text-shadow: 2px 2px $texteffect;
 }
 
 // this is the hover effect on the svg- the fontawesomeicons------
@@ -21,8 +30,7 @@ svg{
   display: inline-block;
   flex-direction: column;
   position:relative;
-  // visibility: hidden;
-  // border: 1px solid red;
+  
 }
 text{
   // visibility: hidden;
@@ -37,12 +45,18 @@ text{
   bottom:0;
   z-index: 2;
   border:1em;
-  transition: font-size 1s;
+  font-weight: 600;
+  color:$textcolor;
+  transition: 
+    font-size 1s,
+    box-shadow 2s;
 }
 a:hover > text{
   visibility: visible;
   overflow: visible;
   font-size: 2rem;
+  box-shadow: 0 5px 2px -2px whitesmoke;
+  
 }
 a:active > text{
   color:rgb(32, 32, 32)
