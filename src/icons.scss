@@ -43,3 +43,51 @@
 .fa-user{
   color:rgb(184, 156, 131)
 }
+
+.fa-xl{
+  font-size: 1.5em;
+}
+@media only screen and (min-width: 960px) {
+  /* styles for browsers larger than 960px; */
+  .fa-xl{
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  /* styles for browsers larger than 1440px; */
+  .fa-xl{
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  /* for sumo sized (mac) screens */
+  .fa-xl{
+    font-size: 3.5em;
+  }
+}
+@media only screen and (max-device-width: 480px) {
+ /* styles for mobile browsers smaller than 480px; (iPhone) */
+ .fa-xl{
+  font-size: 1.75em;
+}
+}
+@media only screen and (device-width: 768px) {
+ /* default iPad screens */
+ .fa-xl{
+  font-size: 3em;
+}
+}
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+/* For portrait layouts only */
+.fa-xl{
+  font-size: 1.5em;
+}
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+/* For landscape layouts only */
+.fa-xl{
+  font-size: 1.5em;
+}
+}

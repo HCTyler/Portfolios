@@ -28,19 +28,19 @@ return (
     </div>
 
     <section>
-      <Link to="Project" smooth={true} duration={1000}><FontAwesomeIcon icon={faCircleArrowDown} size="2xl" beat/><text>Click me!</text></Link>
+      <Link to="Project" smooth={true} duration={1000}><FontAwesomeIcon icon={faCircleArrowDown} size="xl" beat/><text>Click me!</text></Link>
     </section>
     <section>
         <a href="https://www.linkedin.com/in/evtyler" target="_blank">
-          <FontAwesomeIcon icon={faLinkedin} size="2xl" bounce/><text>LinkedIn</text>
+          <FontAwesomeIcon icon={faLinkedin} size="xl" bounce/><text>LinkedIn</text>
         </a> 
 
         <a href="https://github.com/HCTyler" target="_blank">
-          <FontAwesomeIcon icon={faGithub} size="2xl" bounce/><text>GitHub</text>
+          <FontAwesomeIcon icon={faGithub} size="xl" bounce/><text>GitHub</text>
         </a>
 
         <a href="https://docs.google.com/document/d/19xC7HYZEElzM0A6s8sSvS-Jsh7W-QVyMCgmYzR9CjUc/export?format=pdf" target="_blank">
-          <FontAwesomeIcon icon={faFilePdf} size="2xl" bounce/><text>Resume</text>
+          <FontAwesomeIcon icon={faFilePdf} size="xl" bounce/><text>Resume</text>
         </a>
     </section>
       

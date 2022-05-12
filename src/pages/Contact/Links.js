@@ -15,17 +15,17 @@ function Links() {
 
   <section>
       <a href="https://www.linkedin.com/in/evtyler" target="_blank">
-        <FontAwesomeIcon icon={faLinkedin} size="2xl"/>
+        <FontAwesomeIcon icon={faLinkedin} size="xl"/>
         <text>LinkedIn</text>
       </a>
 
       <a href="https://github.com/HCTyler" target="_blank">
-        <FontAwesomeIcon icon={faGithub} size="2xl"/>
+        <FontAwesomeIcon icon={faGithub} size="xl"/>
         <text>GitHub</text>
       </a>
       
       <a href="https://docs.google.com/viewer?url=https://docs.google.com/document/d/19xC7HYZEElzM0A6s8sSvS-Jsh7W-QVyMCgmYzR9CjUc/export?format=pdf" target="_blank">
-        <FontAwesomeIcon icon={faFilePdf} size="2xl"/>
+        <FontAwesomeIcon icon={faFilePdf} size="xl"/>
         <text>Resume</text>
       </a>
   </section>

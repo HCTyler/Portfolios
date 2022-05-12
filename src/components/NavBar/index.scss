@@ -1,5 +1,4 @@
 nav{
-    overflow: hidden;
     display:flex;
     align-items:baseline;
     justify-content: left;
@@ -20,7 +19,6 @@ nav a{
   text-align:start;
   padding: 0 1rem 1rem 1rem;
   text-decoration: none;
-  font-size: 150%;
 }
 /* Change background on mouse-over */
 nav a:hover {
@@ -35,6 +33,7 @@ nav a:hover {
   height:100%;
 }
 
+
 @media only screen and (min-width: 960px) {
   /* styles for browsers larger than 960px; */
 }
@@ -46,6 +45,24 @@ nav a:hover {
 }
 @media only screen and (max-device-width: 480px) {
  /* styles for mobile browsers smaller than 480px; (iPhone) */
+ nav{
+  display:flex;
+  align-items:baseline;
+  justify-content: center;
+  position:fixed;
+  top:0;
+  height: 10vh;
+  width:100vw;
+  z-index:9999;
+  overflow: visible;
+}
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 0 0 20px 20px;
+  height:100%;
+}
 }
 @media only screen and (device-width: 768px) {
  /* default iPad screens */

@@ -11,23 +11,23 @@ function Skills() {
     <ul>
       <a>
         <text>HTML</text>
-        <FontAwesomeIcon icon={faHtml5} size="2xl"  shake/>
+        <FontAwesomeIcon icon={faHtml5} size="xl"  shake/>
       </a>
       <a>
         <text>CSS</text>
-        <FontAwesomeIcon icon={faCss3Alt} size="2xl" fade />
+        <FontAwesomeIcon icon={faCss3Alt} size="xl" fade />
       </a>
       <a>
         <text>JavaScript</text>
-        <FontAwesomeIcon icon={faJsSquare} size="2xl" beat />
+        <FontAwesomeIcon icon={faJsSquare} size="xl" beat />
       </a>
       <a>
         <text>React</text>
-        <FontAwesomeIcon icon={faReact} size="2xl" spin/>
+        <FontAwesomeIcon icon={faReact} size="xl" spin/>
       </a>
       <a>
         <text>Bootstrap</text>
-        <FontAwesomeIcon icon={faBootstrap} size="2xl" bounce/>
+        <FontAwesomeIcon icon={faBootstrap} size="xl" bounce/>
       </a>
     </ul>
 
@@ -35,11 +35,11 @@ function Skills() {
     <ul>
     <a>
         <text>Googling</text>
-        <FontAwesomeIcon icon={faMagnifyingGlass} size="2xl" bounce/>
+        <FontAwesomeIcon icon={faMagnifyingGlass} size="xl" bounce/>
       </a>
       <a>
         <text>Teamwork</text>
-        <FontAwesomeIcon icon={faPeopleGroup} size="2xl" bounce/>
+        <FontAwesomeIcon icon={faPeopleGroup} size="xl" bounce/>
       </a>
     </ul>
 </div>

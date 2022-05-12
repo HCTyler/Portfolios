@@ -92,11 +92,11 @@ return(
         </div>
         <section>
             <a href={github}>
-            <FontAwesomeIcon icon={faGithub} size="2xl"/>
+            <FontAwesomeIcon icon={faGithub} size="xl"/>
                 <text>GitHub</text>
             </a>
             <a href={deployed}>
-                <FontAwesomeIcon icon={faDesktop} size="2xl" />
+                <FontAwesomeIcon icon={faDesktop} size="xl" />
                 <text>Application</text>
             </a>
         </section>
