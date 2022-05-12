@@ -1,13 +1,24 @@
 #Project{
     display: flex;
     flex-direction: column;
-
-  article{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+    // background-color: rgba(230, 218, 218, 0.505);
+    // height:120vh;
+    
+    article{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10vh;
   }
+  h1{
+    font-size: 10em;
+    font-weight: 900;
+    margin-left:10vw ;
+    color:rgba(45, 45, 45, 0.25);
+    position: absolute;
+    z-index: -1;
+}
  }
 
 .major{
@@ -48,6 +59,7 @@
     display:flex;
     flex-direction: row;
     justify-content: center;
+    background-color: rgb(230, 218, 218, 0.505);
   }
   section a{
     position:relative;
@@ -58,14 +70,10 @@
     color: black;
   }
 }
-.fade-box{
-  // background: rgb(0, 0, 0);
-}
 .fade-image, .fade-text{
   position:absolute;
   top: 0;
 }
-
 .fade-text{
   opacity: 0;
 }
@@ -79,32 +87,26 @@
   transition: 1s;
 }
 
-// .flip {
-//   max-height:100%;
-//   max-width:100%;
-//   grid-area:main;
-//   // height: 20rem;
-//   header {
-//     color: rgb(0, 0, 0);
-//     font-size: 2em;
-//     grid-area: header;
-//   }
-// p{
-//   width: 90%;
-//   color: rgb(46, 46, 46);
-//   padding: 1rem 0.5rem 0 0.5rem ;
-// }
-// img{
-//   max-height: 100%;
-//   max-width:100%;
-//   object-fit: contain;
-//   justify-content: center;
-//   object-fit:cover;
-// }
-// p, img{
-//   // position:absolute;
-//   // text-align: center;
-//   transition: transform 0.6s;
-//   transform-style: preserve-3d;
-// }
-// }
+@media only screen and (min-width: 960px) {
+  /* styles for browsers larger than 960px; */
+}
+@media only screen and (min-width: 1440px) {
+  /* styles for browsers larger than 1440px; */
+}
+@media only screen and (min-width: 2000px) {
+  /* for sumo sized (mac) screens */
+}
+@media only screen and (max-device-width: 480px) {
+ /* styles for mobile browsers smaller than 480px; (iPhone) */
+}
+@media only screen and (device-width: 768px) {
+ /* default iPad screens */
+}
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+/* For portrait layouts only */
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+/* For landscape layouts only */
+}

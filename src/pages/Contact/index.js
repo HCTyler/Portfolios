@@ -9,8 +9,11 @@ function index() {
     <div id="Contact">
       <About/>
       <section class="contact">
-        <Links />
-        <Skills />
+          <h2>Contact</h2>
+        <main>
+          <Links />
+          <Skills />
+        </main>
       </section>
     </div>
   )

@@ -28,7 +28,7 @@ return (
     </div>
 
     <section>
-      <Link to="Project" smooth={true} duration={1000} offset={-40}><FontAwesomeIcon icon={faCircleArrowDown} size="2xl" beat/><text>Click me!</text></Link>
+      <Link to="Project" smooth={true} duration={1000}><FontAwesomeIcon icon={faCircleArrowDown} size="2xl" beat/><text>Click me!</text></Link>
     </section>
     <section>
         <a href="https://www.linkedin.com/in/evtyler" target="_blank">

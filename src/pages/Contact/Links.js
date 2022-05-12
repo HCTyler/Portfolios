@@ -8,10 +8,9 @@ function Links() {
   return (
 <div className="links">
   <div>
-    <h1>Contact</h1>
     <p> Feel free to send me an email, call or contact me through my social platforms. I look forward to connecting!</p>
     
-    <a onClick={()=>window.location = "mailto:edgar.fernand@outlook.com"}>Edgar.Fernand@outlook.com</a>||<a href="tel:36093265524"> 360.932.6524</a>
+    <a href='edgar.fernand@outlook.com'>Edgar.Fernand@outlook.com</a>||<a href="tel:36093265524"> 360.932.6524</a>
   </div>
 
   <section>

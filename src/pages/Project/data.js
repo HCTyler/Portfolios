@@ -44,6 +44,24 @@ function Data() {
             description:"A simple timed quiz web application that challenges you with various laboratory related questions. How many of the questions can you get right?",
             skills:["HTML", "CSS", "JavaScript"],
         },
+        {
+            name:"Web The Builder",
+            image:Web_The_Builder,
+            alt:"Screenshot of the project called 'Web The Builder'",
+            deployed:"https://pacific-sands-33682.herokuapp.com/",
+            github:"https://github.com/HCTyler/Web-the-Builder",
+            description:"A mock e-commerce website that allows users to create an account, add and remove items in their cart, and purchase a product. This site also provides ",
+            skills:["MongoDB Atlas", "React", "Express","Node","Heroku"]
+        },
+        {
+            name:"Weather Dashbord",
+            image:Weather_Application,
+            alt:"Screenshot of the project called 'Weather Dashbord'",
+            deployed:"https://hctyler.github.io/Weather_Dashboard/",
+            github:"https://github.com/HCTyler/Weather_Dashboard",
+            description:"This application implements the openweathermap API to present the current weather and a forecast for a user input city name. This saves the previously searched cities as a button below the search region for quick reaccess.",
+            skills:["API","Bootstrap","JavaScript"]
+        },
 
     ]
     const otherProject = [
@@ -55,24 +73,6 @@ function Data() {
         //     github:"https://github.com/HCTyler/PasswordGenerator",
         //     description:"This application uses javascript fundamentals to generate a random password with some given optional criterias: i.e length, capitalization, numeric, and special characters. The generated password is then displayed within the page for the user.",
         //     skills:["HTML", "CSS","JavaScript"],
-        // },
-        // {
-        //     name:"Web The Builder",
-        //     image:Web_The_Builder,
-        //     alt:"Screenshot of the project called 'Web The Builder'",
-        //     deployed:"https://pacific-sands-33682.herokuapp.com/",
-        //     github:"https://github.com/HCTyler/Web-the-Builder",
-        //     description:"A mock e-commerce website that allows users to create an account, add and remove items in their cart, and purchase a product. This site also provides ",
-        //     skills:["MongoDB Atlas", "React", "Express","Node","Heroku"]
-        // },
-        // {
-        //     name:"Weather Dashbord",
-        //     image:Weather_Application,
-        //     alt:"Screenshot of the project called 'Weather Dashbord'",
-        //     deployed:"https://hctyler.github.io/Weather_Dashboard/",
-        //     github:"https://github.com/HCTyler/Weather_Dashboard",
-        //     description:"This application implements the openweathermap API to present the current weather and a forecast for a user input city name. This saves the previously searched cities as a button below the search region for quick reaccess.",
-        //     skills:["API","Bootstrap","JavaScript"]
         // },
     ]
 
