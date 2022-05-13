@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolios/static/css/main.86928558.css",
+    "main.css": "/Portfolios/static/css/main.23153014.css",
     "main.js": "/Portfolios/static/js/main.c73ca553.js",
     "static/media/Coding_Quiz.png": "/Portfolios/static/media/Coding_Quiz.b1585fae489cedd6a444.png",
     "static/media/background.jpg": "/Portfolios/static/media/background.37cedc3fda644293b4fa.jpg",
@@ -13,11 +13,11 @@
     "static/media/Password_Generator.png": "/Portfolios/static/media/Password_Generator.3975382b74ab9329f038.png",
     "static/media/Note_Taker.png": "/Portfolios/static/media/Note_Taker.74b091d396956650df35.png",
     "index.html": "/Portfolios/index.html",
-    "main.86928558.css.map": "/Portfolios/static/css/main.86928558.css.map",
+    "main.23153014.css.map": "/Portfolios/static/css/main.23153014.css.map",
     "main.c73ca553.js.map": "/Portfolios/static/js/main.c73ca553.js.map"
   },
   "entrypoints": [
-    "static/css/main.86928558.css",
+    "static/css/main.23153014.css",
     "static/js/main.c73ca553.js"
   ]
 }
