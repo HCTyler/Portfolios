@@ -16,13 +16,16 @@ p{
     font-size: 1.25em;
     font-weight: 500;
     color: rgb(0, 0, 0);
-    padding: 2% 2.5% 2% 2%;
+    // padding: 2% 2.5% 2% 2%;
+    padding: 5%;
+    margin:2rem 1rem;
     margin-left: 40%;
+
     border-bottom: 1px solid rgb(255, 255, 255);
     border-left: 1px solid rgb(252, 252, 252);
     background-color:rgba(248, 251, 255, 0.5);
     box-shadow: -5px 3px black;
-    border-radius: 0 0 0 5rem;
+    border-radius: 5rem;
 }
 h1{
     font-size: 10em;
@@ -36,7 +39,7 @@ h1{
 
 .contact{
     text-align: center;
-    margin-left:10vw ;
+    
   main{
     display: flex;
     flex-direction: column;
@@ -53,6 +56,7 @@ h1{
   }
   h2{
     font-size: 10em;
+    margin-left:10vw ;
     font-weight: 900;
     color:rgb(45, 45, 45);
     position: absolute;
@@ -281,7 +285,6 @@ h1{
  margin-left: 10vw;
  p{
    margin-left: 0;
-   padding-bottom: 10%;
  }
 }
 .contact{
@@ -294,8 +297,8 @@ main{
   flex-direction: column;
   justify-content: center;
   box-shadow: -5px 3px black;
-  margin:0 1rem;
-  margin-left:0;
+  // margin:0 1rem;
+  margin-left: 10vw;
   margin-bottom: 10%;
 }
 h2{

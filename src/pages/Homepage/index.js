@@ -1,6 +1,7 @@
 import React from "react"
 import "./index.scss"
 import {Link} from "react-scroll"
+import Resume from "../../components/NavBar/files/Edgar_Fernandez_Resume.pdf"
 import Typewriter from "typewriter-effect"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import { faCircleArrowDown,faFilePdf } from '@fortawesome/free-solid-svg-icons'
@@ -39,7 +40,7 @@ return (
           <FontAwesomeIcon icon={faGithub} size="xl" bounce/><text>GitHub</text>
         </a>
 
-        <a href="https://docs.google.com/document/d/19xC7HYZEElzM0A6s8sSvS-Jsh7W-QVyMCgmYzR9CjUc/export?format=pdf" target="_blank">
+        <a href={Resume} target="_blank">
           <FontAwesomeIcon icon={faFilePdf} size="xl" bounce/><text>Resume</text>
         </a>
     </section>

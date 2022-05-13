@@ -29,12 +29,18 @@ svg{
   display: inline-block;
   flex-direction: column;
   position:relative;
+  opacity: 1;
+  visibility: visible;
+  transition: 
+    opacity 1s,
+    visibility 1.5s;
   
 }
 text{
   display: flex;
   flex-direction: column;
-  align-items: bottom;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   font-size:0;
   top:0;
@@ -45,14 +51,17 @@ text{
   border:1em;
   font-weight: 600;
   color:$textcolor;
-  transition: 
+  transition:
     font-size 1s,
     box-shadow 2s;
+
+
 }
 a:hover > text{
   visibility: visible;
   overflow: visible;
   font-size: 2rem;
+  width:100%;
   // box-shadow: 0 5px 2px -2px whitesmoke;
   text-shadow: 1px 1px rgb(246, 247, 255);
   
@@ -63,6 +72,7 @@ a:active > text{
 }
 a:hover > svg{
   visibility: hidden;
+  opacity: 0;
 }
 // ----------------------------------------------------------------
 @media only screen and (min-width: 960px) {
