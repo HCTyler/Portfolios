@@ -56,13 +56,13 @@
 @media only screen and (min-width: 1440px) {
   /* styles for browsers larger than 1440px; */
   .fa-xl{
-    font-size: 2em;
+    font-size: 3em;
   }
 }
 @media only screen and (min-width: 2000px) {
   /* for sumo sized (mac) screens */
   .fa-xl{
-    font-size: 3.5em;
+    font-size:3em;
   }
 }
 @media only screen and (max-device-width: 480px) {
@@ -81,13 +81,13 @@
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
 /* For portrait layouts only */
 .fa-xl{
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
 /* For landscape layouts only */
 .fa-xl{
-  font-size: 1.5em;
+  font-size: 3em;
 }
 }
