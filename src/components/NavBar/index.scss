@@ -56,7 +56,6 @@ nav a:hover,nav a:active {
   top:0;
   height: 10vh;
   width:100%;
-  overflow: visible;
 }
 .navbar{
   display: none;
@@ -72,7 +71,7 @@ nav a:hover,nav a:active {
   background-color:rgba(29, 29, 29, 0.5);
   p{
     color:white;
-    font-size: 150%;
+    font-size: 100%;
   }
 }
 }

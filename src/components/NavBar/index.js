@@ -4,6 +4,7 @@ import Resume from "./files/Edgar_Fernandez_Resume.pdf"
 import {Link} from "react-scroll"
 import {faHome,faUser,faArrowUpRightFromSquare,faFilePdf} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons"
 
 
 function index() {
@@ -26,6 +27,12 @@ function index() {
     <a href={Resume} target="_blank">
         <text>Resume</text>
         <FontAwesomeIcon icon={faFilePdf} size="xl"/>
+    </a>
+    <a href="https://www.linkedin.com/in/evtyler" target="_blank">
+          <FontAwesomeIcon icon={faLinkedin} size="xl"/><text>LinkedIn</text>
+    </a>
+    <a href="https://github.com/HCTyler" target="_blank">
+          <FontAwesomeIcon icon={faGithub} size="xl"/><text>GitHub</text>
     </a>
   </div>
   <div className='navbar-hide'>

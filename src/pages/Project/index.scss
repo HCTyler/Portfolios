@@ -96,6 +96,7 @@
 @media only screen and (max-device-width: 480px) {
  /* styles for mobile browsers smaller than 480px; (iPhone) */
  #Project{
+   
  h1{
   font-size: 4em;
   font-weight: 900;
@@ -104,12 +105,12 @@
 }
 }
 .major{
-  width: 25rem;
+  width: 20rem;
   height:20rem;
   box-shadow: 5px 10px;
 img {
   height: 15rem;
-  width:25rem;
+  width:20rem;
   object-fit: fill;
   justify-content: center;
   }
