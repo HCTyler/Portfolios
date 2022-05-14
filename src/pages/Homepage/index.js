@@ -15,7 +15,7 @@ return (
   <div className="landing">
     <div>
       <h1>Edgar Fernandez</h1>
-      <p>Front End Developer || San Diego, CA || I build things on the web</p>
+      <p>Front End Developer</p>
       {/* <p>
         <Typewriter
           options={{
