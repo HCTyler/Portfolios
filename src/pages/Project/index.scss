@@ -1,8 +1,6 @@
 #Project{
     display: flex;
     flex-direction: column;
-    // background-color: rgba(230, 218, 218, 0.505);
-    // height:120vh;
     
     article{
       display: flex;
@@ -14,7 +12,7 @@
   h1{
     font-size: 10em;
     font-weight: 900;
-    margin-left:6vw ;
+    margin-left:10vw ;
     color:rgba(45, 45, 45, 0.25);
     position: absolute;
     z-index: -1;
@@ -28,13 +26,11 @@
     margin:1rem;
     position:relative;
     flex-direction: column;
-    // border-top: 3px solid rgb(255, 255, 255);
-    // border-left: 3px solid rgb(255, 255, 255);
-    box-shadow: 5px 10px;
+    box-shadow: 5px 5px rgba(0, 0, 0),10px 10px rgba(0, 0, 0, 0.75),15px 15px rgba(0, 0, 0, 0.5);
   img {
     height: 20rem;
     width:30rem;
-    object-fit: fill;
+    object-fit:cover;
     justify-content: center;
     }
   header{

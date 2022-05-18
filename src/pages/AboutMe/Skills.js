@@ -5,29 +5,31 @@ import {faPeopleGroup,faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons
 
 function Skills() {
   return (
+<div>
+  <h2>My Skills</h2>    
+  <div className="skills">
     
-<div className="skills">
-    <h3>Language and Framework Proficiencies</h3>
+    <h3>Language and Framework</h3>
     <ul>
       <a>
         <text>HTML</text>
-        <FontAwesomeIcon icon={faHtml5} size="xl"  shake/>
+        <FontAwesomeIcon icon={faHtml5} size="xl"/>
       </a>
       <a>
         <text>CSS</text>
-        <FontAwesomeIcon icon={faCss3Alt} size="xl" fade />
+        <FontAwesomeIcon icon={faCss3Alt} size="xl"/>
       </a>
       <a>
         <text>JavaScript</text>
-        <FontAwesomeIcon icon={faJsSquare} size="xl" beat />
+        <FontAwesomeIcon icon={faJsSquare} size="xl"/>
       </a>
       <a>
         <text>React</text>
-        <FontAwesomeIcon icon={faReact} size="xl" spin/>
+        <FontAwesomeIcon icon={faReact} size="xl"/>
       </a>
       <a>
         <text>Bootstrap</text>
-        <FontAwesomeIcon icon={faBootstrap} size="xl" bounce/>
+        <FontAwesomeIcon icon={faBootstrap} size="xl"/>
       </a>
     </ul>
 
@@ -35,13 +37,14 @@ function Skills() {
     <ul>
     <a>
         <text>Googling</text>
-        <FontAwesomeIcon icon={faMagnifyingGlass} size="xl" bounce/>
+        <FontAwesomeIcon icon={faMagnifyingGlass} size="xl"/>
       </a>
       <a>
         <text>Teamwork</text>
-        <FontAwesomeIcon icon={faPeopleGroup} size="xl" bounce/>
+        <FontAwesomeIcon icon={faPeopleGroup} size="xl"/>
       </a>
     </ul>
+  </div>
 </div>
   )
 }

@@ -1,47 +1,5 @@
-.fa-html5{
-  color:rgb(255, 153, 51);
-}
-.fa-css3-alt{
-  color:rgb(51, 204, 255);
-}
-.fa-js-square{
-  color:rgb(255, 255, 102);
-}
-.fa-react{
-  color:rgb(8, 252, 252);
-}
-.fa-bootstrap{
-  color:rgb(130, 20, 255);
-}
-.fa-github{
-  color:rgb(0, 0, 0);
-}
-.fa-linkedin{
-  color:rgb(7, 0, 206);
-}
-.fa-envelope{
-  color: rgb(255, 245, 245);
-}
-.fa-file-pdf{
-  color: rgba(222, 11, 11);
-}
-.fa-circle-arrow-down{
-  color:rgb(198, 139, 63);
-}
-.fa-people-group{
-  color:rgb(27, 66, 240);
-}
-.fa-magnifying-glass{
-  color:rgb(25, 25, 25);
-}
-.fa-house{
-  color:rgb(194, 194, 109);
-}
-.fa-arrow-up-right-from-square{
-  color:rgb(184, 143, 67)
-}
-.fa-user{
-  color:rgb(184, 156, 131)
+.fa-html5,.fa-css3-alt,.fa-js-square,.fa-react,.fa-bootstrap,.fa-circle-arrow-down,.fa-people-group,.fa-magnifying-glass,.fa-house,.fa-arrow-up-right-from-square,.fa-user,.fa-github,.fa-linkedin,.fa-file-pdf,.fa-desktop{
+  color:rgb(225, 134, 55)
 }
 
 .fa-xl{
@@ -49,15 +7,10 @@
 }
 @media only screen and (min-width: 960px) {
   /* styles for browsers larger than 960px; */
-  .fa-xl{
-    font-size: 2em;
-  }
 }
 @media only screen and (min-width: 1440px) {
   /* styles for browsers larger than 1440px; */
-  .fa-xl{
-    font-size: 2.5em;
-  }
+
 }
 @media only screen and (min-width: 2000px) {
   /* for sumo sized (mac) screens */
@@ -68,26 +21,19 @@
 @media only screen and (max-device-width: 480px) {
  /* styles for mobile browsers smaller than 480px; (iPhone) */
  .fa-xl{
-  font-size: 1.75em;
+  font-size: 1em;
 }
 }
 @media only screen and (device-width: 768px) {
  /* default iPad screens */
- .fa-xl{
-  font-size: 3em;
-}
 }
 /* different techniques for iPad screening */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
 /* For portrait layouts only */
-.fa-xl{
-  font-size: 2em;
-}
+
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
 /* For landscape layouts only */
-.fa-xl{
-  font-size: 2.5em;
-}
+
 }

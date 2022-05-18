@@ -1,11 +1,13 @@
 import React from 'react'
 import "./index.scss"
-import Links from './Links'
+import Skills from './Skills'
+import About from './About'
 
 function index() {
   return (
-    <div id='Contact'>
-      <Links />
+    <div id="Information">
+      <About/>
+      <Skills />
     </div>
   )
 }

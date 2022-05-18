@@ -1,0 +1,386 @@
+//classes are named with their respective file-------------------
+#Information{
+    color:rgb(10, 10, 10);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(230, 218, 218, 0.505);
+    width:100%;
+  a:hover{
+    text-decoration: underline;
+    text-shadow: 0.05em 0.05em rgb(231, 231, 231)
+  }
+  a:active{
+    text-decoration: underline;
+    color: white;
+    text-shadow: 0.1em whitesmoke;
+  }
+  h2{
+    font-size: 10em;
+    margin-left:60vw ;
+    font-weight: 900;
+    color:rgb(45, 45, 45, 0.25);
+    position: absolute;
+    z-index: -1;
+  }
+}
+.about{
+    // height:100%;
+p{
+    text-align: left;
+    align-items: left;
+    line-height: 130%;
+    font-size: 1.25em;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    // padding: 2% 2.5% 2% 2%;
+    padding: 5%;
+    margin:2rem 1rem;
+    margin-left: 20vw;
+    margin-top:12vh;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid rgb(252, 252, 252);
+    background-color:rgba(248, 251, 255, 0.5);
+    box-shadow: -5px 3px black;
+    border-radius: 5rem;
+}
+h1{
+    font-size: 10em;
+    font-weight: 900;
+    margin-left:10vw ;
+    color:rgba(45, 45, 45, 0.25);
+    position: absolute;
+    z-index: -1;
+}
+}
+
+// .contact{
+  // main{
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: right;
+  //   background-color:rgba(248, 251, 255, 0.5);
+  //   border-bottom: 1px solid rgb(255, 255, 255);
+  //   border-left: 1px solid rgb(255, 255, 255);
+  //   border-radius: 5rem;
+  //   border-width: 2px;
+  //   box-shadow: -5px 3px black;
+  //   margin:0 1rem;
+  //   margin-right:14vw;
+  //   margin-left: 10vw;
+  //   margin-bottom: 1vh;
+  //   margin-top: 12vh;
+  // }
+  // a:hover{
+  //   text-decoration: underline;
+  //   text-shadow: 0.05em 0.05em rgb(231, 231, 231)}
+  // a:active{
+  //   text-decoration: underline;
+  //   color: white;
+  //   text-shadow: 0.1em whitesmoke;}
+// }
+
+.skills{
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  background-color:rgba(248, 251, 255, 0.5);
+  border-bottom: 1px solid rgb(255, 255, 255);
+  border-left: 1px solid rgb(255, 255, 255);
+  border-radius: 5rem;
+  border-width: 2px;
+  box-shadow: -5px 3px black;
+  margin:0 1rem;
+  margin-right:14vw;
+  margin-left: 10vw;
+  margin-bottom: 10vh;
+  margin-top: 12vh;
+  text-align: center;
+  ul{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // overflow: visible;
+    color:rgb(10, 10, 10);;
+    list-style-type:none;
+  a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 2.75rem;
+    border-style: solid;
+    position:relative;
+  }}
+
+}
+
+//---------------------------------------------------------------
+
+
+//mediaquery----------------------------------------------------
+@media only screen and (min-width: 960px) {
+  /* styles for browsers larger than 960px; */
+
+}
+@media only screen and (min-width: 1440px) {
+  /* styles for browsers larger than 1440px; */
+  
+}
+@media only screen and (min-width: 2000px) {
+  /* for sumo sized (mac) screens */
+
+  #Contact{
+
+    height: 100%;
+}
+.about{
+    height:100%;
+    // padding-top: 10%;
+
+p{
+    font-size: 2em;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    padding: 2% 2.5% 2% 2%;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+h1{
+    font-size: 15em;
+    position: absolute;
+    z-index: -1;
+}
+}
+
+.contact{
+    text-align: center;
+    margin-left:10vw ;
+  // main{
+  //   box-shadow: -5px 3px black;
+  //   margin:0 1rem;
+  //   margin-left:40%;
+  //   margin-bottom: 10%;
+  //   margin-top: 10%;
+  // }
+  h2{
+    margin-left: 0;
+    font-size: 15em;
+    font-weight: 900;
+    color:rgb(45, 45, 45);
+    position: absolute;
+    z-index: -1;
+  }
+  h3{
+    font-size: 200%;
+  }
+}
+.links{
+  p{
+    text-align: center;
+    padding: 2% 5%;
+    font-weight: 900;
+    font-size: 200%;
+  }
+  a{
+    font-weight: 900;
+    padding: 0.5em;
+    color:rgb(10, 10, 10);;
+    position: relative;
+  }
+  section{
+    display:flex;
+    justify-content: center;  
+    a{
+    align-content: center;
+    overflow: visible;
+    padding:0 3rem;
+    }
+  }
+}
+.skills{
+  ul{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // overflow: visible;
+    color:rgb(10, 10, 10);;
+    list-style-type:none;
+    box-shadow: -5px 3px black;
+    margin:0 1rem;
+    margin-left:40%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+  a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 2.75rem;
+    border-style: solid;
+    position:relative;
+  }
+}
+}
+
+
+}
+@media only screen and (max-device-width: 480px) {
+ /* styles for mobile browsers smaller than 480px; (iPhone) */
+ #Contact{
+    background-color: rgba(230, 218, 218, 0.505);
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+   h1{
+    font-size: 500%;
+    font-weight: 900;
+    margin-left:10vw ;
+    color:rgba(45, 45, 45, 0.75);
+    position: relative;
+    z-index: 1;
+   }
+ }
+ .about{
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   p{
+     margin-left: 0;
+     padding-bottom: 10%;
+     padding-top: 15%;
+     font-size: 100%;
+   }
+ }
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0;
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: -5px 3px black;
+    margin:0 1rem;
+    margin-left:0;
+    margin-bottom: 10%;
+    padding-top: 5%;
+  }
+  h2{
+    font-size: 500%;
+    font-weight: 900;
+    color:rgba(45, 45, 45, 0.75);
+    position: relative;
+    z-index: 1;
+   }
+}
+.links section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+}
+
+@media only screen and (device-width: 768px) {
+ /* default iPad screens */
+ #Contact{
+  background-color: rgba(230, 218, 218, 0.505);
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+ h1{
+  font-size: 5em;
+  font-weight: 900;
+  margin-left:10vw ;
+  color:rgba(45, 45, 45, 0.75);
+  position: relative;
+  z-index: 1;
+ }
+}
+.about{
+ display:flex;
+ flex-direction: column;
+ justify-content: center;
+ margin-left: 10vw;
+ p{
+   margin-left: 0;
+ }
+}
+.contact{
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-left: 0;
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: -5px 3px black;
+  // margin:0 1rem;
+  margin-left: 10vw;
+  margin-bottom: 10%;
+}
+h2{
+  font-size: 5em;
+  font-weight: 900;
+  color:rgba(45, 45, 45, 0.75);
+  position: relative;
+  z-index: 1;
+ }
+}
+}
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+/* For portrait layouts only */
+#Contact{
+  background-color: rgba(230, 218, 218, 0.505);
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+ h1{
+  font-size: 5em;
+  font-weight: 900;
+  margin-left:10vw ;
+  color:rgba(45, 45, 45, 0.75);
+  position: relative;
+  z-index: 1;
+ }
+}
+.about{
+ display:flex;
+ flex-direction: column;
+ justify-content: center;
+ margin-left: 10vw;
+ p{
+   margin-left: 0;
+ }
+}
+.contact{
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-left: 0;
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: -5px 3px black;
+  // margin:0 1rem;
+  margin-left: 10vw;
+  margin-bottom: 10%;
+}
+h2{
+  font-size: 5em;
+  font-weight: 900;
+  color:rgba(45, 45, 45, 0.75);
+  position: relative;
+  z-index: 1;
+ }
+}
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+/* For landscape layouts only */
+}
+  

@@ -14,8 +14,8 @@ return (
 <div className="backgroundStyle" id="Home">
   <div className="landing">
     <div>
-      <h1>Edgar Fernandez</h1>
-      <p>Front End Developer</p>
+      <h1>Hi, my name is Edgar Fernandez</h1>
+      <p>I am a Junior Full Stack Developer</p>
       {/* <p>
         <Typewriter
           options={{

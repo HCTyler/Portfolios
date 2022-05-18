@@ -12,7 +12,7 @@ function Data() {
             name:"Git Cooking",
             image:Git_Cooking,
             alt:"Screenshot of the project called 'GitCooking'",
-            deployed:"https://github.com/nmbeilke/Git-Cooking",
+            deployed:"https://nmbeilke.github.io/Git-Cooking/",
             github:"https://github.com/nmbeilke/Git-Cooking",
             description:"Don't know what to make for dinner? This is an application is just for you! This web application generates a random recipe and drink pairing from your choosing!",
             skills:["HTML","CSS", "JavaScript","Bootstrap", "API"]
