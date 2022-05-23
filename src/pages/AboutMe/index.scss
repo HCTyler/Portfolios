@@ -20,9 +20,15 @@
     font-size: 10em;
     margin-left:60vw ;
     font-weight: 900;
-    color:rgb(45, 45, 45, 0.25);
+    color:rgb(248, 249, 255);
+    text-shadow: -5px 5px black;
     position: absolute;
-    z-index: -1;
+    // z-index: -1;
+  }
+  h3{
+    font-size: 2.5em;
+    padding-top: 1vh;
+    color:rgba(45, 45, 45, 0.5);
   }
 }
 .about{
@@ -38,20 +44,22 @@ p{
     padding: 5%;
     margin:2rem 1rem;
     margin-left: 20vw;
-    margin-top:12vh;
+    margin-top:15vh;
     border-bottom: 1px solid rgb(255, 255, 255);
     border-left: 1px solid rgb(252, 252, 252);
-    background-color:rgba(248, 251, 255, 0.5);
+    background-color:rgba(248, 249, 255);
     box-shadow: -5px 3px black;
     border-radius: 5rem;
+    z-index: 555;
 }
 h1{
     font-size: 10em;
     font-weight: 900;
     margin-left:10vw ;
-    color:rgba(45, 45, 45, 0.25);
+    color:rgba(248, 249, 255);
+    text-shadow: -5px 5px black;
     position: absolute;
-    z-index: -1;
+    // z-index: -1;
 }
 }
 
@@ -85,7 +93,7 @@ h1{
   display: flex;
   flex-direction: column;
   justify-content: right;
-  background-color:rgba(248, 251, 255, 0.5);
+  background-color:rgba(248, 249, 255);
   border-bottom: 1px solid rgb(255, 255, 255);
   border-left: 1px solid rgb(255, 255, 255);
   border-radius: 5rem;
@@ -95,8 +103,9 @@ h1{
   margin-right:14vw;
   margin-left: 10vw;
   margin-bottom: 10vh;
-  margin-top: 12vh;
+  margin-top: 15vh;
   text-align: center;
+  z-index: 999999;
   ul{
     display:flex;
     flex-wrap: wrap;
@@ -171,9 +180,9 @@ h1{
     position: absolute;
     z-index: -1;
   }
-  h3{
-    font-size: 200%;
-  }
+  // h3{
+  //   font-size: 200%;
+  // }
 }
 .links{
   p{

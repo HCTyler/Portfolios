@@ -2,7 +2,7 @@ import React from 'react'
 import "./index.scss"
 import Resume from "./files/Edgar_Fernandez_Resume.pdf"
 import {Link} from "react-scroll"
-import {faHome,faUser,faArrowUpRightFromSquare,faFilePdf} from '@fortawesome/free-solid-svg-icons'
+import {faHome,faUser,faArrowUpRightFromSquare,faFilePdf, faAddressCard} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons"
 
@@ -24,6 +24,10 @@ function index() {
       <Link to="Information" smooth={true} >
           <text>About</text>
           <FontAwesomeIcon icon={faUser} size="xl"/>
+      </Link>
+      <Link to="Contact" smooth={true} >
+          <text>Contact</text>
+          <FontAwesomeIcon icon={faAddressCard} size="xl"/>
       </Link>
     </div>
     <div className='navbottom'>
