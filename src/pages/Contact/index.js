@@ -1,7 +1,8 @@
 import React from 'react'
 import "./index.scss"
 import ContactInfoItem from './ContactInfoItem'
-import ContactForm from './ContactForm'
+// import ContactForm from './ContactForm'
+// import Google
 
 function index() {
   return (
@@ -11,7 +12,9 @@ function index() {
         <h2>Get in touch!</h2>
           <main>
             <ContactInfoItem />
-            <ContactForm />
+            {/* <ContactForm /> */}
+            
+            
           </main>
         </section>
     </div>
