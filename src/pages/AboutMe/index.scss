@@ -16,15 +16,24 @@
     color: white;
     text-shadow: 0.1em whitesmoke;
   }
-  h2{
+  h1{
     font-size: 10em;
-    margin-left:60vw ;
     font-weight: 900;
-    color:rgb(248, 249, 255);
+    margin-left:10vw ;
+    color:rgba(248, 249, 255);
     text-shadow: -5px 5px black;
     position: absolute;
     // z-index: -1;
   }
+  // h2{
+  //   font-size: 10em;
+  //   margin-left:60vw ;
+  //   font-weight: 900;
+  //   color:rgb(248, 249, 255);
+  //   text-shadow: -5px 5px black;
+  //   position: absolute;
+  //   // z-index: -1;
+  // }
   h3{
     font-size: 2.5em;
     padding-top: 1vh;
@@ -52,15 +61,15 @@ p{
     border-radius: 5rem;
     z-index: 555;
 }
-h1{
-    font-size: 10em;
-    font-weight: 900;
-    margin-left:10vw ;
-    color:rgba(248, 249, 255);
-    text-shadow: -5px 5px black;
-    position: absolute;
-    // z-index: -1;
-}
+// h1{
+//     font-size: 10em;
+//     font-weight: 900;
+//     margin-left:10vw ;
+//     color:rgba(248, 249, 255);
+//     text-shadow: -5px 5px black;
+//     position: absolute;
+//     // z-index: -1;
+// }
 }
 
 // .contact{

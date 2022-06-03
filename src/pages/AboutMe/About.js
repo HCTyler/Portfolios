@@ -7,8 +7,8 @@ function About() {
   <div className="about">
     <h1>About Me</h1>
     <p>
-      Hello, my name is Edgar Fernandez and I am a front-end developer. 
-      Recently graduated from coding bootcamp from UCSD. I am seeking out opportunities to collaborate with you and bring my 5 years experience working in a customer service to help build your application.
+      Hello world! My name is Edgar Fernandez. I am a junior web developer based out on San Diego, California and I like building things on the web.
+      I recently graduated from a coding bootcamp through the University of California- San Diego, and through there I've learned alot. 
     </p>
   </div>
   )

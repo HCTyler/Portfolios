@@ -6,7 +6,7 @@ import {faPeopleGroup,faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons
 function Skills() {
   return (
 <div>
-  <h2>My Skills</h2>    
+  <h1>My Skills</h1>    
   <div className="skills">
     
     <h3>Language and Framework</h3>
