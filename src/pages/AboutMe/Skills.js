@@ -6,7 +6,7 @@ import {faPeopleGroup,faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons
 function Skills() {
   return (
 <div>
-  <h1>My Skills</h1>    
+  {/* <h1>My Skills</h1>     */}
   <div className="skills">
     
     <h3>Language and Framework</h3>
@@ -41,6 +41,10 @@ function Skills() {
       </a>
       <a>
         <text>Teamwork</text>
+        <FontAwesomeIcon icon={faPeopleGroup} size="xl"/>
+      </a>
+      <a>
+        <text>PhotoShop</text>
         <FontAwesomeIcon icon={faPeopleGroup} size="xl"/>
       </a>
     </ul>
