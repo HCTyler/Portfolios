@@ -4,6 +4,7 @@ import {faHtml5, faCss3Alt,faJsSquare,faReact,faBootstrap} from "@fortawesome/fr
 import {faPeopleGroup,faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons'
 
 function Skills() {
+
   return (
 <div>
   {/* <h1>My Skills</h1>     */}

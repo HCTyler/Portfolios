@@ -8,15 +8,14 @@ function index() {
   return (
     <div id='Contact' className='links'>
       <h1>Contact</h1>
-        <section>
+      <section>
         <h2>Get in touch!</h2>
-          <main>
-            <ContactInfoItem />
-            {/* <ContactForm /> */}
-            
-            
-          </main>
-        </section>
+        <main>
+          <ContactInfoItem />
+
+
+        </main>
+      </section>
     </div>
   )
 }

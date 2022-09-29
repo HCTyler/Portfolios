@@ -1,12 +1,9 @@
 import React from "react";
 import "./index.scss"
 import {Coding_Quiz, Git_Cooking, Note_Taker,Shady_Market_Place, Password_Generator, Web_The_Builder,Weather_Application} from "./image/index.js"
-import {faGithub} from "@fortawesome/free-brands-svg-icons"
-import {faDesktop} from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
-function Data() {
+
     const project = [
         {
             name:"Git Cooking",
@@ -73,62 +70,6 @@ function Data() {
         },
 
     ]
-    const otherProject = [
-    ]
 
-return (
-<>
-<article>
-{project.map(({name,image,alt,deployed,github,description}) =>{
-return(
-    <div class="major">
-        <div className="fade-box">
-            <div className="fade-image"></div>
-            <img src={image} alt={alt} />
-            <div className="fade-text">
-                <header>{name}</header>
-                <p>{description}</p>
-            </div>
-        </div>
-        <section>
-            <a href={github}>
-            <FontAwesomeIcon icon={faGithub} size="xl"/>
-                <text>GitHub</text>
-            </a>
-            <a href={deployed}>
-                <FontAwesomeIcon icon={faDesktop} size="xl" />
-                <text>Application</text>
-            </a>
-        </section>
-    </div>
-)
-})}
-</article>
-{/* <article>
-{otherProject.map(({name,image,alt,deployed,github,description}) =>{
-    return(
-        <div class="minor">
-            <header>{name}</header>
-        <a href={deployed}>
-            <img src={image} alt={alt} />
-            <p>{description}</p>
-        </a>
-        <section>
-            <a href={github}>
-            <FontAwesomeIcon icon={faGithub} size="2xl"/>
-                <text>GitHub Page</text>
-            </a>
-            <a href={deployed}>
-                <FontAwesomeIcon icon={faDesktop} size="2xl" />
-                <text>Deployed Site</text>
-            </a>
-        </section>
-    </div>
-)
-})}
-</article> */}
-</>
-)
-}
 
 export default Data

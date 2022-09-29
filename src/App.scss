@@ -9,92 +9,108 @@ $texteffect:rgba(194, 194, 194, 0.25);
   border: 0px;
 
 }
-body, html{
+
+body,
+html {
   height: 100vh;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-  background-color:rgb(248, 249, 255);
-  color:$textcolor;
-  
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: rgb(248, 249, 255);
+  color: $textcolor;
+
 }
+
 a {
   text-decoration: none;
 }
-h1, h2, h3{
+
+h1,
+h2,
+h3 {
   text-shadow: 2px 2px $texteffect;
 }
 
 // this is the hover effect on the svg- the fontawesomeicons------
-svg{
-  padding:1rem;
+svg {
+  padding: 1rem;
   display: inline-block;
   flex-direction: column;
-  position:relative;
+  position: relative;
   opacity: 1;
   visibility: visible;
-  transition: 
+  transition:
     opacity 1s,
     visibility 1.5s;
-  
+
 }
-text{
+
+text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
-  font-size:0;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
+  font-size: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 2;
-  border:1em;
+  border: 1em;
   font-weight: 600;
-  color:$textcolor;
+  color: $textcolor;
   transition:
     font-size 1s,
     box-shadow 2s;
 
 
 }
-a:hover > text{
+
+a:hover>text {
   visibility: visible;
   overflow: visible;
   font-size: 2rem;
-  width:100%;
+  width: 100%;
   // box-shadow: 0 5px 2px -2px whitesmoke;
   text-shadow: 1px 1px rgb(246, 247, 255);
-  
+
 }
-a:active > text{
-  color:rgb(215, 215, 215);
+
+a:active>text {
+  color: rgb(215, 215, 215);
   text-shadow: 1px 1px rgb(10, 38, 255);
 }
-a:hover > svg{
+
+a:hover>svg {
   visibility: hidden;
   opacity: 0;
 }
+
 // ----------------------------------------------------------------
 @media only screen and (min-width: 960px) {
   /* styles for browsers larger than 960px; */
 }
+
 @media only screen and (min-width: 1440px) {
   /* styles for browsers larger than 1440px; */
 }
+
 @media only screen and (min-width: 2000px) {
   /* for sumo sized (mac) screens */
 }
+
 @media only screen and (max-device-width: 480px) {
- /* styles for mobile browsers smaller than 480px; (iPhone) */
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
 }
+
 @media only screen and (device-width: 768px) {
- /* default iPad screens */
+  /* default iPad screens */
 }
+
 /* different techniques for iPad screening */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-/* For portrait layouts only */
+  /* For portrait layouts only */
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-/* For landscape layouts only */
+  /* For landscape layouts only */
 }
