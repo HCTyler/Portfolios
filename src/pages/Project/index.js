@@ -1,5 +1,5 @@
 import React from 'react'
-import Data from "./data"
+import project from "./data"
 import {faGithub} from "@fortawesome/free-brands-svg-icons"
 import {faDesktop} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
