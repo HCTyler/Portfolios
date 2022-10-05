@@ -8,14 +8,12 @@ function index() {
   return (
     <div className='navbar'>
       <h1>Edgar Fernandez</h1>
+      <div className='hide'>
       <Link to="Home">
         <p>Home</p>
       </Link>
       <Link to="Project" >
         <p>Projects</p>
-      </Link>
-      <Link to="Information">
-        <p>About</p>
       </Link>
       <Link to="Contact">
         <p>Contact</p>
@@ -23,6 +21,7 @@ function index() {
       <a href={Resume} target="_blank">
         <p>Resume</p>
       </a>
+      </div>
     </div>
   )
 }
