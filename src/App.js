@@ -1,21 +1,33 @@
 import "./App.scss";
 import "./icons.scss"
-import Homepage from "./pages/Homepage"
-import Project from "./pages/Project";
-import NavBar from "./components/NavBar"
+import React, { useState } from "react"
+import Directories from "./pages/Directory/directory";
+import Navbar from "./components/NavBar"
 import Footer from "./components/Footer";
 
 
 
 function App() {
-  return (
-  <>
-    <NavBar/>
-    <Project/>
-    <Footer/>
+  const [pages] = useState([
+    { name: "about me" },
+    { name: "project" },
+  ])
 
-  </>
+  const [currentPage, setCurrentPage] = useState(pages[0])
+
+  return (
+    <div>
+      <Navbar
+        pages={pages}
+        setCurrentPage={setCurrentPage}
+        currentPage={currentPage}
+      />
+
+      <main>
+        <Directories currentPage={currentPage}></Directories>
+      </main>
+    </div>
   )
 }
 
-export default App;
+export default App

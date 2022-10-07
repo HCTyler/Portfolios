@@ -1,10 +1,9 @@
 import React from 'react'
 import "./index.scss"
 import ContactInfoItem from './ContactInfoItem'
-// import ContactForm from './ContactForm'
-// import Google
 
-function index() {
+
+function Contact() {
   return (
     <div id='Contact' className='links'>
       <h1>Contact</h1>
@@ -20,4 +19,4 @@ function index() {
   )
 }
 
-export default index
+export default Contact

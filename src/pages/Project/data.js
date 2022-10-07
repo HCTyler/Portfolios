@@ -1,7 +1,7 @@
 import "./index.scss"
 import { Coding_Quiz, Git_Cooking, Note_Taker, Shady_Market_Place, Password_Generator, Web_The_Builder, Weather_Application } from "./image/index.js"
 
-const project = [
+const ProjectData = [
     {
         name: "Git Cooking",
         image: Git_Cooking,
@@ -68,4 +68,4 @@ const project = [
 
 ]
 
-export default project
+export default ProjectData

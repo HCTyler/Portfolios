@@ -5,7 +5,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import { faCircleArrowDown,faFilePdf } from '@fortawesome/free-solid-svg-icons'
 
 
-function Homepage() {
+function Homepage({currentPage}) {
 
 return (
 <div className="backgroundStyle" id="Home">
@@ -26,7 +26,3 @@ return (
 }
 
 export default Homepage
-
-
-
-    
