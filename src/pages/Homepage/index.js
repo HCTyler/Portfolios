@@ -1,28 +1,31 @@
-import React from "react"
 import "./index.scss"
-import {Link} from "react-scroll"
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import { faCircleArrowDown,faFilePdf } from '@fortawesome/free-solid-svg-icons'
+import React, { useState } from "react"
+import { capitalizeFirstLetter } from "../../utils/helpers"
 
+function Homepage() {
+  const [pages] = useState([
+    {
+      name: "about me"
+    }
+  ])
+  const [currentPage] = useState(pages[0])
 
-function Homepage({currentPage}) {
-
-return (
-<div className="backgroundStyle" id="Home">
-  <div className="landing">
-    <div>
-      <h1>Hi, my name is Edgar Fernandez</h1>
-      <p>I am a Junior Full Stack Developer</p>
-
+  return (
+    <div className="masthead text-center text-white d-flex contactpage">
+      <div className="container my-auto">
+        <div className="row">
+          <div className="col-lg-10 mx-auto">
+            <h1>{capitalizeFirstLetter(currentPage.name)}</h1>
+            <hr />
+            <p className="text-faded mb-5">
+              Hello World!<br></br>
+              I am front-end developer passionate about creating interactive applications and experiences on the web. After completing my coding bootcamp course at UCSD extension, I have found that my passion lies in designing and developing accessible and responsive websites.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <section>
-      <Link to="Project" smooth={true} duration={1000}><FontAwesomeIcon icon={faCircleArrowDown} size="xl" beat/><text>Click me!</text></Link>
-    </section>
-
-  </div>
-</div>
-)
+  )
 }
 
 export default Homepage

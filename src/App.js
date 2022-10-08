@@ -1,8 +1,8 @@
 import "./App.scss";
 import "./icons.scss"
 import React, { useState } from "react"
-import Directories from "./pages/Directory/directory";
-import Navbar from "./components/NavBar"
+import Directories from "./pages/Directory/Directory";
+import Navbar from "./components/Navbar"
 import Footer from "./components/Footer";
 
 
@@ -26,6 +26,7 @@ function App() {
       <main>
         <Directories currentPage={currentPage}></Directories>
       </main>
+      <Footer />
     </div>
   )
 }
