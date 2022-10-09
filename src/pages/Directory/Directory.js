@@ -2,6 +2,7 @@ import React from "react"
 import DirectoryHelper from "./DirectoryHelper"
 import Homepage from "../Homepage"
 import Project from "../Project"
+import Contact from "../Contact"
 
 
 function Directories({ currentPage }) {
@@ -11,6 +12,8 @@ function Directories({ currentPage }) {
     switch (currentPage.name) {
       case "project":
         return <Project />
+        case "contact":
+          return <Contact />
       default:
         return <Homepage />
     }

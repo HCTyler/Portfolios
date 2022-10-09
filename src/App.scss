@@ -1,7 +1,7 @@
-//all element-only based styling goes in here. If you need to style a specific element from a specific folder, reference the class or id of the parent and nest the child element in it.
+
 $textcolor:rgb(18, 18, 18);
 $texteffect:rgba(194, 194, 194, 0.25);
-
+@import "~bootstrap/scss/bootstrap";
 
 * {
   padding: 0px;
@@ -14,7 +14,7 @@ body,
 html {
   height: 100vh;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: rgb(248, 249, 255);
+  // background-color: rgb(248, 249, 255);
   color: $textcolor;
 
 }
