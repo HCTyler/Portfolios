@@ -1,33 +1,6 @@
-
 $textcolor:rgb(18, 18, 18);
 $texteffect:rgba(194, 194, 194, 0.25);
 @import "~bootstrap/scss/bootstrap";
-
-* {
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
-
-}
-
-body,
-html {
-  height: 100vh;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  // background-color: rgb(248, 249, 255);
-  color: $textcolor;
-
-}
-
-a {
-  text-decoration: none;
-}
-
-h1,
-h2,
-h3 {
-  text-shadow: 2px 2px $texteffect;
-}
 
 // this is the hover effect on the svg- the fontawesomeicons------
 svg {

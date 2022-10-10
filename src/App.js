@@ -1,3 +1,4 @@
+import "./reset.scss"
 import "./App.scss";
 import "./icons.scss"
 import React, { useState } from "react"
@@ -25,7 +26,7 @@ function App() {
         currentPage={currentPage}
       />
 
-      <main>
+      <main className="main-page">
         <Directories currentPage={currentPage}></Directories>
       </main>
       <Footer />

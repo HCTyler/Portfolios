@@ -1,152 +1,177 @@
-#Project{
+#Project {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6vh;
+
+  article {
     display: flex;
-    flex-direction: column;
-    padding-top:6vh;
-    
-    article{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 0 12.5vh 12.5vh 12.5vh;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 12.5vh 12.5vh 12.5vh;
   }
-  h1{
+
+  h1 {
     font-size: 10em;
     font-weight: 900;
-    margin-left:10vw ;
+    margin-left: 10vw;
     // color:rgba(45, 45, 45, 0.25);
-    color:rgb(230, 218, 218);
-    text-shadow: -5px 5px rgb(45,45,45);
+    color: rgb(230, 218, 218);
+    text-shadow: -5px 5px rgb(45, 45, 45);
     // position: absolute;
     // z-index: -1;
+  }
 }
- }
 
-.major{
-    width: 30rem;
-    height:25rem;
-    display:flex;
-    margin:1rem;
-    position:relative;
-    flex-direction: column;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.75),10px 10px rgba(0, 0, 0, 0.5),15px 15px rgba(0, 0, 0, 0.25);
-    transition: box-shadow 0.25s ease-in-out;
+.major {
+  width: 30rem;
+  height: 25rem;
+  display: flex;
+  margin: 1rem;
+  position: relative;
+  flex-direction: column;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.75), 10px 10px rgba(0, 0, 0, 0.5), 15px 15px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.25s ease-in-out;
+
   img {
     height: 20rem;
-    width:30rem;
-    object-fit:cover;
+    width: 30rem;
+    object-fit: cover;
     justify-content: center;
-    }
-  header{
+  }
+
+  header {
     font-size: 200%;
     font-weight: 900;
     padding: 1rem;
     text-align: center;
     text-shadow: 1px 1px black;
   }
+
   p {
     padding: 1rem 0.5rem 0 0.5rem;
     text-align: left;
     font-size: 125%;
     font-weight: 700;
   }
-  section{
+
+  section {
     align-self: flex-end;
-    height:5rem;
+    height: 5rem;
     width: 100%;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     background-color: rgb(230, 218, 218, 0.505);
   }
-  section a{
-    position:relative;
+
+  section a {
+    position: relative;
     justify-content: space-between;
     padding: 0 10%;
   }
+
   text {
     color: black;
   }
 }
-.fade-image, .fade-text{
-  position:absolute;
+
+.fade-image,
+.fade-text {
+  position: absolute;
   top: 0;
 }
-.fade-text{
+
+.fade-text {
   opacity: 0;
 }
-.fade-box:hover > .fade-text{
+
+.fade-box:hover>.fade-text {
   opacity: 1;
   transition: 0.5s ease-in;
 }
-.fade-box:hover > img{
+
+.fade-box:hover>img {
   opacity: 0.1;
   transition: 1s ease-out;
 }
-.major:hover{
-  box-shadow: 5px 5px rgba(0, 0, 0,0.75),10px 10px rgba(0, 0, 0, 0.5),-5px -5px rgba(0, 0, 0);
+
+.major:hover {
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.75), 10px 10px rgba(0, 0, 0, 0.5), -5px -5px rgba(0, 0, 0);
 }
 
 @media only screen and (min-width: 960px) {
   /* styles for browsers larger than 960px; */
 }
+
 @media only screen and (min-width: 1440px) {
   /* styles for browsers larger than 1440px; */
 }
+
 @media only screen and (min-width: 2000px) {
   /* for sumo sized (mac) screens */
 }
+
 @media only screen and (max-device-width: 480px) {
- /* styles for mobile browsers smaller than 480px; (iPhone) */
- #Project{
-   width:100vw;
- h1{
-  font-size: 4em;
-  font-weight: 900;
-  color:rgba(45, 45, 45, 0.25);
-  z-index:1
+
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+  #Project {
+    width: 100vw;
+
+    h1 {
+      font-size: 4em;
+      font-weight: 900;
+      color: rgba(45, 45, 45, 0.25);
+      z-index: 1
+    }
+  }
+
+  .major {
+    width: 20rem;
+    height: 20rem;
+    box-shadow: 5px 10px;
+
+    img {
+      height: 15rem;
+      width: 20rem;
+      object-fit: fill;
+      justify-content: center;
+    }
+  }
+
 }
+
+@media only screen and (device-width: 768px) {
+  /* default iPad screens */
 }
-.major{
-  width: 20rem;
-  height:20rem;
-  box-shadow: 5px 10px;
-img {
-  height: 15rem;
-  width:20rem;
-  object-fit: fill;
-  justify-content: center;
+
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+
+  /* For portrait layouts only */
+  #Project {
+    h1 {
+      font-size: 5em;
+      font-weight: 900;
+      color: rgba(45, 45, 45, 0.25);
+      z-index: 1
+    }
+  }
+
+  .major {
+    width: 25rem;
+    height: 20rem;
+    box-shadow: 5px 10px;
+
+    img {
+      height: 15rem;
+      width: 25rem;
+      object-fit: fill;
+      justify-content: center;
+    }
   }
 }
 
-}
-@media only screen and (device-width: 768px) {
- /* default iPad screens */
-}
-/* different techniques for iPad screening */
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-/* For portrait layouts only */
-#Project{
-  h1{
-   font-size: 5em;
-   font-weight: 900;
-   color:rgba(45, 45, 45, 0.25);
-   z-index:1
- }
- }
- .major{
-   width: 25rem;
-   height:20rem;
-   box-shadow: 5px 10px;
- img {
-   height: 15rem;
-   width:25rem;
-   object-fit: fill;
-   justify-content: center;
-   }
- }
-}
-
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-/* For landscape layouts only */
+  /* For landscape layouts only */
 }
