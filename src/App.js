@@ -3,7 +3,7 @@ import Header from "./components/Header"
 import Introduction from "./components/Directory"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
-import 'bootstrap/dist/css/bootstrap.css'
+
 
 function App() {
     const [pages] = useState([

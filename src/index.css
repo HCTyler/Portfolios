@@ -1,4 +1,10 @@
-@import 'bootstrap/dist/css/bootstrap.min.css';
+:root{
+  --primaryColor: #f05f40;
+  --secondaryColor: #ee4b28;
+  --tertiaryColor: #212529;
+  --darkAccent:#868e96;
+  --lightAccent: #fff;
+}
 
 /* -----------------------------------------RESET CSS-------------------------------------- */
 body,
@@ -14,21 +20,21 @@ body {
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: #f05f40;
+  border-color: var(--primaryColor);
 }
 
 hr.light {
-  border-color: #fff;
+  border-color: var(--lightAccent);
 }
 
 a {
-  color: #f05f40;
+  color: var(--primaryColor);
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
 }
 a:hover {
-  color: #f05f40;
+  color: var(--primaryColor);
 }
 
 h1,
