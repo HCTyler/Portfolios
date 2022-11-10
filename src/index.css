@@ -1,0 +1,12 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.aboutme {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url("./assets/files/background.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

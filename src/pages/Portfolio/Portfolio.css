@@ -2,25 +2,22 @@
   display: flex;
   flex-direction: column;
   padding-top: 6vh;
+}
 
-  article {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 0 12.5vh 12.5vh 12.5vh;
-  }
+#Project article {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 12.5vh 12.5vh 12.5vh;
+}
 
-  h1 {
-    font-size: 10em;
-    font-weight: 900;
-    margin-left: 10vw;
-    // color:rgba(45, 45, 45, 0.25);
-    color: rgb(230, 218, 218);
-    text-shadow: -5px 5px rgb(45, 45, 45);
-    // position: absolute;
-    // z-index: -1;
-  }
+#Project h1 {
+  font-size: 10em;
+  font-weight: 900;
+  margin-left: 10vw;
+  color: rgb(230, 218, 218);
+  text-shadow: -5px 5px rgb(45, 45, 45);
 }
 
 .major {
@@ -32,49 +29,50 @@
   flex-direction: column;
   box-shadow: 5px 5px rgba(0, 0, 0, 0.75), 10px 10px rgba(0, 0, 0, 0.5), 15px 15px rgba(0, 0, 0, 0.25);
   transition: box-shadow 0.25s ease-in-out;
-
-  img {
-    height: 20rem;
-    width: 30rem;
-    object-fit: cover;
-    justify-content: center;
-  }
-
-  header {
-    font-size: 200%;
-    font-weight: 900;
-    padding: 1rem;
-    text-align: center;
-    text-shadow: 1px 1px black;
-  }
-
-  p {
-    padding: 1rem 0.5rem 0 0.5rem;
-    text-align: left;
-    font-size: 125%;
-    font-weight: 700;
-  }
-
-  section {
-    align-self: flex-end;
-    height: 5rem;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgb(230, 218, 218, 0.505);
-  }
-
-  section a {
-    position: relative;
-    justify-content: space-between;
-    padding: 0 10%;
-  }
-
-  text {
-    color: black;
-  }
 }
+
+.major img {
+  height: 20rem;
+  width: 30rem;
+  object-fit: cover;
+  justify-content: center;
+}
+
+.major header {
+  font-size: 200%;
+  font-weight: 900;
+  padding: 1rem;
+  text-align: center;
+  text-shadow: 1px 1px black;
+}
+
+.major p {
+  padding: 1rem 0.5rem 0 0.5rem;
+  text-align: left;
+  font-size: 125%;
+  font-weight: 700;
+}
+
+.major section {
+  align-self: flex-end;
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(230, 218, 218, 0.505);
+}
+
+.major section a {
+  position: relative;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+.major text {
+  color: black;
+}
+
 
 .fade-image,
 .fade-text {
@@ -117,27 +115,29 @@
   /* styles for mobile browsers smaller than 480px; (iPhone) */
   #Project {
     width: 100vw;
-
-    h1 {
-      font-size: 4em;
-      font-weight: 900;
-      color: rgba(45, 45, 45, 0.25);
-      z-index: 1
-    }
   }
+
+  #Project h1 {
+    font-size: 4em;
+    font-weight: 900;
+    color: rgba(45, 45, 45, 0.25);
+    z-index: 1
+  }
+
 
   .major {
     width: 20rem;
     height: 20rem;
     box-shadow: 5px 10px;
-
-    img {
-      height: 15rem;
-      width: 20rem;
-      object-fit: fill;
-      justify-content: center;
-    }
   }
+
+  .major img {
+    height: 15rem;
+    width: 20rem;
+    object-fit: fill;
+    justify-content: center;
+  }
+
 
 }
 
@@ -149,27 +149,27 @@
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
 
   /* For portrait layouts only */
-  #Project {
-    h1 {
-      font-size: 5em;
-      font-weight: 900;
-      color: rgba(45, 45, 45, 0.25);
-      z-index: 1
-    }
+  #Project h1 {
+    font-size: 5em;
+    font-weight: 900;
+    color: rgba(45, 45, 45, 0.25);
+    z-index: 1
   }
+
 
   .major {
     width: 25rem;
     height: 20rem;
     box-shadow: 5px 10px;
-
-    img {
-      height: 15rem;
-      width: 25rem;
-      object-fit: fill;
-      justify-content: center;
-    }
   }
+
+  .major img {
+    height: 15rem;
+    width: 25rem;
+    object-fit: fill;
+    justify-content: center;
+  }
+
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {

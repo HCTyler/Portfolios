@@ -1,6 +1,6 @@
 import React from "react"
 
-const DirectoryHelper = (props) => {
+const DirectoryProps = (props) => {
 
   return (
     <div>
@@ -9,4 +9,4 @@ const DirectoryHelper = (props) => {
   )
 }
 
-export default DirectoryHelper
+export default DirectoryProps

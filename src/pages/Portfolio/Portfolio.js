@@ -1,20 +1,21 @@
-import React, { useState } from 'react'
-import ProjectData from "./data"
-import { faGithub } from "@fortawesome/free-brands-svg-icons"
-import { faDesktop } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useState } from "react"
+import ProjectData from "../../components/ProjectData"
+import "./Portfolio.css"
 
-function Project() {
+function Portfolio() {
     const [pages] = useState([
         {
-            name: "project"
+            name: "portfolio"
         }
     ])
     const [currentPage] = useState(pages[0])
 
     return (
-        <div id="Project">
-            <article>
+        <section className="p-0">
+            <div className="container-fluid p-0">
+                <hr className="my-4" />
+                <div className="row no-gutters popup-gallery">
+
                 {ProjectData.map(({ name, image, alt, deployed, github, description }) => {
                     return (
                         <div class="major">
@@ -28,20 +29,22 @@ function Project() {
                             </div>
                             <section>
                                 <a href={github}>
-                                    <FontAwesomeIcon icon={faGithub} size="xl" />
+                                    {/* <FontAwesomeIcon icon={faGithub} size="xl" /> */}
                                     <text>GitHub</text>
                                 </a>
                                 <a href={deployed}>
-                                    <FontAwesomeIcon icon={faDesktop} size="xl" />
+                                    {/* <FontAwesomeIcon icon={faDesktop} size="xl" /> */}
                                     <text>Application</text>
                                 </a>
                             </section>
                         </div>
                     )
                 })}
-            </article>
-        </div>
+                </div>
+
+            </div>
+        </section>
     )
 }
 
-export default Project
+export default Portfolio

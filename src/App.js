@@ -1,37 +1,35 @@
-import "./reset.scss"
-import "./App.scss";
-import "./icons.scss"
 import React, { useState } from "react"
-import Directories from "./pages/Directory/Directory";
-import Footer from "./components/Footer";
-import './App.scss';
-import Navmenu from "./components/Navbar";
-
-
+import Header from "./components/Header"
+import Introduction from "./components/Directory"
+import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
+import 'bootstrap/dist/css/bootstrap.css'
 
 function App() {
-  const [pages] = useState([
-    { name: "home" },
-    { name: "project" },
-    { name: "contact"},
-  ])
+    const [pages] = useState([
+        { name: "about me" },
+        { name: "portfolio" },
+        { name: "contact" },
+        { name: "resume" },
+    ])
 
-  const [currentPage, setCurrentPage] = useState(pages[0])
+    const [currentPage, setCurrentPage] = useState(pages[0])
 
-  return (
-    <div>
-      <Navmenu
-        pages={pages}
-        setCurrentPage={setCurrentPage}
-        currentPage={currentPage}
-      />
-
-      <main className="main-page">
-        <Directories currentPage={currentPage}></Directories>
-      </main>
-      <Footer />
-    </div>
-  )
+    return (
+        <div>
+            <Header>
+                <Navbar
+                    pages={pages}
+                    setCurrentPage={setCurrentPage}
+                    currentPage={currentPage}
+                ></Navbar>
+            </Header>
+            <main>
+                <Introduction currentPage={currentPage}></Introduction>
+            </main>
+            <Footer />
+        </div>
+    )
 }
 
 export default App
