@@ -1,6 +1,6 @@
-import "./About.css"
 import React, { useState } from "react"
-import { capitalizeFirstLetter } from "../../utils/helpers"
+import "./About.css"
+
 
 function About() {
     const [pages] = useState([
