@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Portfolios/static/css/main.689db152.css",
-    "main.js": "/Portfolios/static/js/main.30ec87b4.js",
+    "main.css": "/Portfolios/static/css/main.5b9eac71.css",
+    "main.js": "/Portfolios/static/js/main.ea28a54d.js",
     "static/media/Coding_Quiz.png": "/Portfolios/static/media/Coding_Quiz.b1585fae489cedd6a444.png",
-    "static/media/background.jpg": "/Portfolios/static/media/background.37cedc3fda644293b4fa.jpg",
     "static/media/Git_Cooking.png": "/Portfolios/static/media/Git_Cooking.e31525d72a4f20ba82ec.png",
     "static/media/Shady_Market_Place.png": "/Portfolios/static/media/Shady_Market_Place.99108a2ce8e4f3582c48.png",
+    "static/media/background.jpg": "/Portfolios/static/media/background.f5d38ec53c888ea46658.jpg",
     "static/media/React_Portfolio.png": "/Portfolios/static/media/React_Portfolio.e058f15308ec8e40308f.png",
     "static/media/Web_The_Builder.png": "/Portfolios/static/media/Web_The_Builder.b6e616fb57241b9cf8d4.png",
-    "static/media/Edgar_Fernandez_Resume.pdf": "/Portfolios/static/media/Edgar_Fernandez_Resume.1f34e653beae6628a356.pdf",
+    "static/media/Resume.pdf": "/Portfolios/static/media/Resume.c554e0e9513f7765d35f.pdf",
     "static/media/Weather_Application.png": "/Portfolios/static/media/Weather_Application.2bb85524dfbb55abbb6c.png",
     "static/media/Password_Generator.png": "/Portfolios/static/media/Password_Generator.3975382b74ab9329f038.png",
     "static/media/Note_Taker.png": "/Portfolios/static/media/Note_Taker.74b091d396956650df35.png",
     "index.html": "/Portfolios/index.html",
-    "main.689db152.css.map": "/Portfolios/static/css/main.689db152.css.map",
-    "main.30ec87b4.js.map": "/Portfolios/static/js/main.30ec87b4.js.map"
+    "main.5b9eac71.css.map": "/Portfolios/static/css/main.5b9eac71.css.map",
+    "main.ea28a54d.js.map": "/Portfolios/static/js/main.ea28a54d.js.map"
   },
   "entrypoints": [
-    "static/css/main.689db152.css",
-    "static/js/main.30ec87b4.js"
+    "static/css/main.5b9eac71.css",
+    "static/js/main.ea28a54d.js"
   ]
 }
