@@ -1,5 +1,6 @@
 import React, { useEffect } from "react"
 import { capitalizeFirstLetter } from "../utils/helpers"
+import "./Navbar.css"
 
 
 function Navbar(props) {

@@ -1,6 +1,9 @@
+import "./Portfolio.css"
 import React, { useState } from "react"
 import ProjectData from "../../components/ProjectData"
-import "./Portfolio.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faDesktop } from "@fortawesome/free-solid-svg-icons"
 
 function Portfolio() {
     const [pages] = useState([
@@ -11,11 +14,8 @@ function Portfolio() {
     const [currentPage] = useState(pages[0])
 
     return (
-        <section className="p-0">
-            <div className="container-fluid p-0">
-                <hr className="my-4" />
-                <div className="row no-gutters popup-gallery">
-
+        <div id="Project">
+            <article>
                 {ProjectData.map(({ name, image, alt, deployed, github, description }) => {
                     return (
                         <div class="major">
@@ -29,21 +29,19 @@ function Portfolio() {
                             </div>
                             <section>
                                 <a href={github}>
-                                    {/* <FontAwesomeIcon icon={faGithub} size="xl" /> */}
+                                    <FontAwesomeIcon icon={faGithub} size="xl" />
                                     <text>GitHub</text>
                                 </a>
                                 <a href={deployed}>
-                                    {/* <FontAwesomeIcon icon={faDesktop} size="xl" /> */}
+                                    <FontAwesomeIcon icon={faDesktop} size="xl" />
                                     <text>Application</text>
                                 </a>
                             </section>
                         </div>
                     )
                 })}
-                </div>
-
-            </div>
-        </section>
+            </article>
+        </div>
     )
 }
 
