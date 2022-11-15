@@ -16,7 +16,7 @@ function About() {
                 <div className="row">
                     <div className="col-lg-10 mx-auto">
                         <h1></h1>
-                        <hr />
+                        <hr className=" my-4 mx-auto" />
                         <p className="text-faded mb-5">
                             Hello World!<br></br>
                             I am front-end developer passionate about creating interactive applications and experiences on the web. After completing my coding bootcamp course at UCSD extension, I’ve found that my passion lies in designing and developing accessible and responsive websites.

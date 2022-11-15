@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import Header from "./components/Header"
 import Introduction from "./components/Directory"
-import Navbar from "./components/Navbar"
-import Footer from "./components/Footer"
+import Navbar from "./components/Navbar/Navbar"
+import Footer from "./components/Footer/Footer"
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
     const [currentPage, setCurrentPage] = useState(pages[0])
 
     return (
-        <div>
+        <div className="everything">
             <Header>
                 <Navbar
                     pages={pages}
@@ -27,7 +27,7 @@ function App() {
             <main>
                 <Introduction currentPage={currentPage}></Introduction>
             </main>
-            <Footer />
+            <Footer/>
         </div>
     )
 }

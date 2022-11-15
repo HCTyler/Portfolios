@@ -19,15 +19,15 @@ const ProjectData = [
         description: "The Shady Marketplace is a complete, mock E-commerce application. The application creates a E-shopping site through which users can browse, purchase, or even sell various 'shady' products (given that they sign up through our website).",
         skills: ["JavaScript", "Bootstrap", "API", "Heroku", "Handlebars"]
     },
-    {
-        name: "Note Taker",
-        image: Note_Taker,
-        alt: "Screenshot of the project called 'Note Taker'",
-        deployed: "https://notetakerforbootcamp-app.herokuapp.com/",
-        github: "https://github.com/HCTyler/NoteTaker",
-        description: "This web application allows the user to store simple notes with to a simple JSON format database. This program uses vanilla JavaScript front end with an Express.js/Node.js back end to store and retrieve notes.",
-        skills: ["JavaScript", "Express.js", "Node.js", "Heroku"],
-    },
+    // {
+    //     name: "Note Taker",
+    //     image: Note_Taker,
+    //     alt: "Screenshot of the project called 'Note Taker'",
+    //     deployed: "https://notetakerforbootcamp-app.herokuapp.com/",
+    //     github: "https://github.com/HCTyler/NoteTaker",
+    //     description: "This web application allows the user to store simple notes with to a simple JSON format database. This program uses vanilla JavaScript front end with an Express.js/Node.js back end to store and retrieve notes.",
+    //     skills: ["JavaScript", "Express.js", "Node.js", "Heroku"],
+    // },
     {
         name: "Coding Quiz",
         image: Coding_Quiz,

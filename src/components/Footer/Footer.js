@@ -1,19 +1,21 @@
 import React from "react"
 import "./Footer"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub, faLinkedinIn, faStackOverflow } from "@fortawesome/free-brands-svg-icons"
 
 function Footer() {
 
     const icons = [
         {
-            name: "fab fa-github",
+            name: faGithub,
             link: "https://github.com/HCTyler"
         },
         {
-            name: "fab fa-linkedin",
+            name: faLinkedinIn,
             link: "https://www.linkedin.com/in/edgarvf/"
         },
         {
-            name: "fab fa-stack-overflow",
+            name: faStackOverflow,
             link: "https://stackoverflow.com/users/16498935/hctyler"
         }
     ]
@@ -22,9 +24,9 @@ function Footer() {
         <footer className="container">
             <div className="row">
                 <div className="col-lg-8 mx-auto text-center">
-                    {icons.map(icon =>
+                    {icons.map(icons =>
                     (
-                        <a href={icon.link} key={icon.name} target="_blank" rel="noopener noreferrer"><i className={icon.name}></i></a>
+                        <a href={icons.link} key={icons.name} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={icons.name} size= "2x" className="p-3"/></a>
                     )
                     )}
                 </div>
