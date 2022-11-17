@@ -21,7 +21,7 @@ function Footer() {
     ]
 
     return (
-        <footer className="container">
+        <footer className="container bottom-0">
             <div className="row">
                 <div className="col-lg-8 mx-auto text-center">
                     {icons.map(icons =>

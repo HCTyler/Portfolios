@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { capitalizeFirstLetter } from "../../utils/helpers"
 import { validateEmail } from "../../utils/helpers"
+import emailjs from "emailjs-com"
 import "./Contact.css"
 
 function Contact() {
@@ -56,13 +57,13 @@ function Contact() {
                 <div className="row">
                     <div className="col-lg-10 mx-auto text-white mb-4">
                         <h1 className="text-center">{capitalizeFirstLetter(currentPage.name)}</h1>
-                        <hr className="light my-4" />
+                        <hr className=" my-4 mx-auto" />
                         <h4>
-                            Want to work together?<br></br>
-                            Send me a messege for any project ideas or <a href="mailto:edgar.fernand@outlook.com"> email</a> me at: <br></br>
+                            Want to work together?<br/>
+                            Send me a messege for any project ideas or <a href="mailto:edgar.fernand@outlook.com"> email</a> me at: <br/>
                             <a href="mailto:edgar.fernand@outlook.com"> edgar.fernand@outlook.com</a>
                         </h4>
-                        <hr></hr>
+                        <hr className=" my-4 mx-auto" />
                         <form id="contact-form" onSubmit={handleSubmit} className="mb-5">
                             <div>
                                 <label htmlFor="name">Name:</label>

@@ -1,5 +1,6 @@
 .contactpage {
-    height: 90vh;
+    max-height: 100vh;
+    height:92vh;
     padding: 5rem
 }
 
