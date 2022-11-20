@@ -19,7 +19,7 @@ function Portfolio() {
             <h1 className="text-center">{capitalizeFirstLetter(currentPage.name)}</h1>
             <hr className=" my-4 mx-auto" />
             <article>
-                {ProjectData.map(({ name, image, alt, deployed, github, description }) => {
+                {ProjectData.map(({ name, image, alt, deployed, github, description,skills }) => {
                     return (
                         <div class="major">
                             <div className="fade-box">
@@ -28,6 +28,7 @@ function Portfolio() {
                                 <div className="fade-text">
                                     <header>{name}</header>
                                     <p>{description}</p>
+
                                 </div>
                             </div>
                             <section>

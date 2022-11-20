@@ -70,3 +70,6 @@ form label:hover {
 .error-text {
     color: red;
 }
+.pass-text {
+    color: green;
+}

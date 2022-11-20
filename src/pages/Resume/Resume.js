@@ -1,8 +1,9 @@
 import React, { useState } from "react"
 import { capitalizeFirstLetter } from "../../utils/helpers"
-import Pdf from "../../assets/files/Resume.pdf"
+// import Pdf from "../../assets/files/Resume.pdf"
 
 function Resume() {
+    const Pdf = "https://docs.google.com/document/d/19xC7HYZEElzM0A6s8sSvS-Jsh7W-QVyMCgmYzR9CjUc/export?format=pdf"
     const [pages] = useState([
         {
             name: "resume"

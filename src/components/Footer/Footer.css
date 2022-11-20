@@ -1,14 +1,65 @@
-footer{
-    height:5vh;
-    display:flex;
+ /* this is the hover effect on the svg- the fontawesomeicons------ */
+ footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+ }
+ footer section{
+    display: flex;
+    align-items: center;
+ }
+ footer svg {
+     padding: 1rem;
+     display: flex;
+     flex-direction: row;
+     position: relative;
+     opacity: 1;
+     visibility: visible;
+     transition:
+         opacity 1s,
+         visibility 1.5s;
+
+ }
+
+ footer text {
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     font-size: 0;
+     z-index: 2;
+     border: 1em;
+     font-weight: 600;
+     color: var(--textcolor);
+     transition:
+         font-size 1s,
+         box-shadow 2s;
+ }
+ footer a{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-}
+    padding:0 1rem;
+ }
 
-footer a {
-    margin: 20pt;
-}
+ footer a:hover>text {
+     visibility: visible;
+     overflow: visible;
+     font-size: 1rem;
+     text-shadow: 1px 1px rgb(246, 247, 255);
 
-a.white-link {
-    color: #fff;
-}
+ }
+
+ footer a:active>text {
+     color: rgb(215, 215, 215);
+     text-shadow: 1px 1px rgb(10, 38, 255);
+ }
+
+ footer a:hover>svg {
+     visibility: hidden;
+     opacity: 0;
+ }
+
+ /* ---------------------------------------------------------------- */
