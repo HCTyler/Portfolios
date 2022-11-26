@@ -30,8 +30,8 @@ function Navbar(props) {
                 <div className="collapse navbar-collapse" id="navbarResponsive">
                     <ul className="navbar-nav ml-auto">
                         {pages.map((Page) => (
-                            <li className={`nav-item nav-link ${currentPage.name === Page.name && "active"}`} key={Page.name} data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-                                <span onClick={() => setCurrentPage(Page)}>
+                            <li onClick={() => setCurrentPage(Page)} className={`nav-item nav-link ${currentPage.name === Page.name && "active"}`} key={Page.name} data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                                <span>
                                     {capitalizeFirstLetter(Page.name)}
                                 </span>
                             </li>

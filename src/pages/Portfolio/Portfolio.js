@@ -14,16 +14,17 @@ function Portfolio() {
     ])
     const [currentPage] = useState(pages[0])
 
+
     return (
-        <div id="Project">
-            <h1 className="text-center">{capitalizeFirstLetter(currentPage.name)}</h1>
-            <hr className=" my-4 mx-auto" />
-            <article>
+            // <hr className=" my-4 mx-auto" />
+        <div id="Project" className="cover">
+            <h1 className="text-center text-white">{capitalizeFirstLetter(currentPage.name)}</h1>
+            <article >
                 {ProjectData.map(({ name, image, alt, deployed, github, description,skills }) => {
                     return (
                         <div class="major">
                             <div className="fade-box">
-                                <div className="fade-image"></div>
+                                <div className="fade-image"/>
                                 <img src={image} alt={alt} />
                                 <div className="fade-text">
                                     <header>{name}</header>

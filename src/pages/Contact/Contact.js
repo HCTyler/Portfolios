@@ -26,7 +26,7 @@ function Contact() {
     const [errorMessage, setErrorMessage] = useState("")
     const [passMessage, setMessage] = useState("")
 
-    // -------------------error messege function------------------------
+// -------------------error messege function------------------------
     const { name, email, message } = formState
 
     const handleSubmit = (e) => {
@@ -57,22 +57,24 @@ function Contact() {
             console.log("Handle Form", formState)
         }
     }
-    // -------------------end of error messege function------------------------    
-    // --------------------email sending function---------------------
+// -------------------end of error messege function------------------------    
+// --------------------email sending function---------------------
     const form = useRef();
 
     const sendEmail = () => {
-        emailjs.sendForm({ serviceID }.serviceID, { templateID }.templateID, form.current, { userID }.userID)
+        emailjs.sendForm({ serviceID }, { templateID }.templateID, form.current, { userID }.userID)
             .then((result) => {
                 console.log("good data", result.text);
                 setMessage("The messege has been sent!")
+                form.target.reset()
 
             }, (error) => {
                 console.log("bad data", error.text,);
                 setErrorMessage("Opps! Something happened, and we could not send the messege. Why not email us instead?")
+                document.reset()
             });
     }
-    // -------------------end of email sending function--------------
+// -------------------end of email sending function--------------
 
     return (
         <section className="bg-dark contactpage">
@@ -86,7 +88,7 @@ function Contact() {
                             Send me a <a href="mailto:edgar.fernand@outlook.com"> messege</a> me at: <a href="mailto:edgar.fernand@outlook.com"> edgar.fernand@outlook.com</a> or just click on one of my social media at the bottom of the page!
                         </h4>
                         <hr className=" my-4 mx-auto" />
-                        <form id="contact-form" ref={form} onSubmit={handleSubmit} className="mb-5">
+                        <form id="contact-form" ref={(form)} onSubmit={handleSubmit} className="mb-5">
                             <div>
                                 <label htmlFor="name">Name:</label>
                                 <input
@@ -120,9 +122,15 @@ function Contact() {
                                     onBlur={handleChange}
                                 />
                             </div>
-                            {errorMessage || passMessage && (
+                            {errorMessage && (
                                 <div>
                                     <p className="error-text">{errorMessage}</p>
+
+                                </div>
+                            )}
+                              { passMessage && (
+                                <div>
+
                                     <p className="pass-text">{passMessage}</p>
                                 </div>
                             )}
