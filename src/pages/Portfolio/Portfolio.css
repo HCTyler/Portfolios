@@ -12,8 +12,8 @@
 
 }
 
-.cover{
-  position:relative;
+.cover {
+  position: relative;
   background-image: url(../../assets/files/background-old.jpg);
   background-color: #f05f40;
   background-position: center center;
@@ -21,8 +21,8 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
 
 #Project article {
@@ -115,7 +115,7 @@
   font-size: 200%;
   font-weight: 900;
   padding: 1rem;
-  text-align: center;
+  text-align: left;
   color: var(--primaryColor);
   text-shadow: 1px 1px black;
 }
@@ -125,7 +125,7 @@
   text-align: left;
   font-size: 100%;
   font-weight: 700;
-  color:var(--textcolor);
+  color: var(--textcolor);
   text-shadow: 1px 1px var(--texteffect);
 }
 
@@ -173,8 +173,9 @@
 
 .major:hover {
   box-shadow: 5px 5px rgba(255, 255, 255, 0.75), 10px 10px rgba(255, 255, 255, 0.5), -5px -5px rgb(255, 255, 255);
-  
+
 }
+
 /* --------------End Project CSS-------------------------- */
 
 @media only screen and (min-width: 960px) {
@@ -193,26 +194,29 @@
 
   /* styles for mobile browsers smaller than 480px; (iPhone) */
   #Project {
-    width: 100vw;
+    max-width: 100vw;
   }
-  #Project svg{
-    display:none
+
+  #Project svg {
+    display: none
   }
-  #Project text{
+
+  #Project text {
     font-size: 1rem;
     padding: 0 0.5rem;
   }
 
   .major {
-    width: 20rem;
-    height: 20rem;
+    max-width: 20rem;
+    max-height: 20rem;
   }
 
   .major img {
-    height: 15rem;
-    width: 20rem;
+    max-height: 15rem;
+    max-width: 20rem;
   }
-  .major section{
+
+  .major section {
     justify-content: space-evenly;
   }
 
@@ -226,10 +230,12 @@
     text-align: left;
     font-size: 1rem;
   }
-  .major text{
-    color: var(--primaryColor)!important;
+
+  .major text {
+    color: var(--primaryColor) !important;
   }
-  .major text:active{
+
+  .major text:active {
     color: var(--textcolor)
   }
 

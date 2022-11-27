@@ -83,10 +83,10 @@ function Contact() {
                     <div className="col-lg-10 mx-auto text-white mb-4">
                         <h1 className="text-center">{capitalizeFirstLetter(currentPage.name)}</h1>
                         <hr className=" my-4 mx-auto" />
-                        <h4>
+                        <p>
                             Want to work together?<br />
                             Send me a <a href="mailto:edgar.fernand@outlook.com"> messege</a> me at: <a href="mailto:edgar.fernand@outlook.com"> edgar.fernand@outlook.com</a> or just click on one of my social media at the bottom of the page!
-                        </h4>
+                        </p>
                         <hr className=" my-4 mx-auto" />
                         <form id="contact-form" ref={(form)} onSubmit={handleSubmit} className="mb-5">
                             <div>

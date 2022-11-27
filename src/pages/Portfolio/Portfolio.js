@@ -14,21 +14,33 @@ function Portfolio() {
     ])
     const [currentPage] = useState(pages[0])
 
+    const [toggle, setToggle] = useState(false)
+    const toggler = () => {
+        toggle ? setToggle(false) : setToggle(true);
+    }
 
     return (
-            // <hr className=" my-4 mx-auto" />
+        // <hr className=" my-4 mx-auto" />
         <div id="Project" className="cover">
             <h1 className="text-center text-white">{capitalizeFirstLetter(currentPage.name)}</h1>
             <article >
-                {ProjectData.map(({ name, image, alt, deployed, github, description,skills }) => {
+                {ProjectData.map(({ name, image, alt, deployed, github, description, skills }) => {
                     return (
-                        <div class="major">
+                        <div class="major" onClick={toggler} onMouseLeave={() => setToggle(true)}>
                             <div className="fade-box">
-                                <div className="fade-image"/>
+                                <div className="fade-image" />
                                 <img src={image} alt={alt} />
                                 <div className="fade-text">
-                                    <header>{name}</header>
-                                    <p>{description}</p>
+                                    {/* <header>{name}</header>
+                                    <p>{description}</p> */}
+                                    {toggle ?
+                                        <span>
+                                            <header>{name}</header>
+                                            <p>{description}</p>
+                                        </span> : <span>
+                                            <header>Languages used</header>
+                                            <p>{skills}</p>
+                                        </span>}
 
                                 </div>
                             </div>
