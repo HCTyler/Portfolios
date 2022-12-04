@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolios/static/css/main.8d71fc73.css",
-    "main.js": "/Portfolios/static/js/main.b886c36e.js",
+    "main.css": "/Portfolios/static/css/main.0f687483.css",
+    "main.js": "/Portfolios/static/js/main.d9d4a625.js",
     "static/media/Coding_Quiz.png": "/Portfolios/static/media/Coding_Quiz.b1585fae489cedd6a444.png",
     "static/media/Git_Cooking.png": "/Portfolios/static/media/Git_Cooking.e31525d72a4f20ba82ec.png",
     "static/media/background.jpg": "/Portfolios/static/media/background.43f540aeaa36f38bc293.jpg",
@@ -13,11 +13,11 @@
     "static/media/Password_Generator.png": "/Portfolios/static/media/Password_Generator.3975382b74ab9329f038.png",
     "static/media/Note_Taker.png": "/Portfolios/static/media/Note_Taker.74b091d396956650df35.png",
     "index.html": "/Portfolios/index.html",
-    "main.8d71fc73.css.map": "/Portfolios/static/css/main.8d71fc73.css.map",
-    "main.b886c36e.js.map": "/Portfolios/static/js/main.b886c36e.js.map"
+    "main.0f687483.css.map": "/Portfolios/static/css/main.0f687483.css.map",
+    "main.d9d4a625.js.map": "/Portfolios/static/js/main.d9d4a625.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d71fc73.css",
-    "static/js/main.b886c36e.js"
+    "static/css/main.0f687483.css",
+    "static/js/main.d9d4a625.js"
   ]
 }
