@@ -1,6 +1,6 @@
 import { Coding_Quiz, Git_Cooking, Note_Taker, Shady_Market_Place, Password_Generator, Web_The_Builder, Weather_Application } from "../assets/image/index"
 
-const ProjectData = [
+const ProjectDatas = [
     // {
     //     name: "Git Cooking",
     //     image: Git_Cooking,
@@ -53,10 +53,9 @@ const ProjectData = [
         deployed: "https://hctyler.github.io/Weather_Dashboard/",
         github: "https://github.com/HCTyler/Weather_Dashboard",
         description: "This application implements the openweathermap API to present the current weather and a forecast for a user input city name. This saves the previously searched cities as a button below the search region for quick reaccess.",
-        skills: ["API", "Bootstrap", "JavaScript"]
+        skills: ["API", "Bootstrap", "JavaScript",]
     },
-    
 
 ]
 
-export default ProjectData
+export default ProjectDatas

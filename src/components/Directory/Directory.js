@@ -1,25 +1,25 @@
 import React from "react"
 import DirectoryProps from "./DirectoryProps"
-import About from "../pages/About/About"
-import Portfolio from "../pages/Portfolio/Portfolio"
-import Contact from "../pages/Contact/Contact"
-import Resume from "../pages/Resume/Resume"
+import Home from "../../pages/Home/Home"
+import Portfolio from "../../pages/Portfolio/Portfolio"
+import Contact from "../../pages/Contact/Contact"
+import About from "../../pages/About/About"
 
 
 function Introduction({ currentPage }) {
 
   const renderPage = () => {
     switch (currentPage.name) {
-      case "about me":
-        return <About />
+      case "home":
+        return <Home />
       case "portfolio":
         return <Portfolio />
       case "contact":
         return <Contact />
-      case "resume":
-        return <Resume />
-      default:
+      case "about me":
         return <About />
+      default:
+        return <Home />
     }
   }
 

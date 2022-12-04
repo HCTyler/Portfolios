@@ -26,7 +26,7 @@ function Contact() {
     const [errorMessage, setErrorMessage] = useState("")
     const [passMessage, setMessage] = useState("")
 
-// -------------------error messege function------------------------
+    // -------------------error messege function------------------------
     const { name, email, message } = formState
 
     const handleSubmit = (e) => {
@@ -41,13 +41,13 @@ function Contact() {
         if (e.target.name === "email") {
             const isValid = validateEmail(e.target.value)
             if (!isValid) {
-                setErrorMessage("Your email is invalid.")
+                setErrorMessage("Your email looks invalid, please recheck it.")
             } else {
                 setErrorMessage("")
             }
         } else {
             if (!e.target.value.length) {
-                setErrorMessage(`${e.target.name} is required.`)
+                setErrorMessage(`Opps! Looks like your ${e.target.name} is empty.`)
             } else {
                 setErrorMessage("")
             }
@@ -57,35 +57,35 @@ function Contact() {
             console.log("Handle Form", formState)
         }
     }
-// -------------------end of error messege function------------------------    
-// --------------------email sending function---------------------
+    // -------------------end of error messege function------------------------    
+    // --------------------email sending function---------------------
     const form = useRef();
 
     const sendEmail = () => {
         emailjs.sendForm({ serviceID }, { templateID }.templateID, form.current, { userID }.userID)
             .then((result) => {
                 console.log("good data", result.text);
-                setMessage("The messege has been sent!")
+                setMessage("Yay! The messege has been sent!")
                 form.target.reset()
 
             }, (error) => {
                 console.log("bad data", error.text,);
-                setErrorMessage("Opps! Something happened, and we could not send the messege. Why not email us instead?")
+                setErrorMessage("Opps! Something happened and we could not send the messege. Why not email us instead?")
                 document.reset()
             });
     }
-// -------------------end of email sending function--------------
+    // -------------------end of email sending function--------------
 
     return (
         <section className="bg-dark contactpage">
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-10 mx-auto text-white mb-4">
+            <div className="containers">
+                <div>
+                    <div className="col-md-8 mx-auto text-white mb-4">
                         <h1 className="text-center">{capitalizeFirstLetter(currentPage.name)}</h1>
                         <hr className=" my-4 mx-auto" />
                         <p>
                             Want to work together?<br />
-                            Send me a <a href="mailto:edgar.fernand@outlook.com"> messege</a> me at: <a href="mailto:edgar.fernand@outlook.com"> edgar.fernand@outlook.com</a> or just click on one of my social media at the bottom of the page!
+                            Send me a  messege me at: <a href="mailto:edgar.fernand@outlook.com"> Edgar.Fernand@outlook.com</a>, this form, or on my LinkedIn at the bottom of the page!
                         </p>
                         <hr className=" my-4 mx-auto" />
                         <form id="contact-form" ref={(form)} onSubmit={handleSubmit} className="mb-5">
@@ -124,14 +124,14 @@ function Contact() {
                             </div>
                             {errorMessage && (
                                 <div>
-                                    <p className="error-text">{errorMessage}</p>
+                                    <h6 className="error-text">{errorMessage}</h6>
 
                                 </div>
                             )}
-                              { passMessage && (
+                            {passMessage && (
                                 <div>
 
-                                    <p className="pass-text">{passMessage}</p>
+                                    <h6 className="pass-text">{passMessage}</h6>
                                 </div>
                             )}
                             <div className="text-center">

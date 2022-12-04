@@ -14,14 +14,11 @@ function Navbar(props) {
         document.title = capitalizeFirstLetter(currentPage.name)
     }, [currentPage])
 
-    function refreshPage() {
-        window.location.reload(false);
-    }
+
     return (
         <nav className="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div className="container">
                 <a className="navbar-brand"
-                // onClick={refreshPage}
                 onClick={() => props.setCurrentPage(pages[0])}
                 >Edgar Fernandez</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">

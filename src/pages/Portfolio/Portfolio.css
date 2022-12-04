@@ -122,6 +122,15 @@
 
 .major p {
   padding: 1rem 0.5rem 0 0.5rem;
+}
+.major li{
+  padding: 0.5rem 1rem;
+  list-style-type: none;
+  white-space: nowrap;
+  overflow-y: auto;
+}
+
+.major p, .major li{
   text-align: left;
   font-size: 100%;
   font-weight: 700;
@@ -157,6 +166,8 @@
 }
 
 .fade-text {
+  width: 100%;
+  height: 100%;
   opacity: 0;
   transition: 1s ease-in-out;
 }

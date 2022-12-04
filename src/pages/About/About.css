@@ -1,49 +1,10 @@
-.aboutme {
-  height: 92vh;
-  max-height: 100vh;
-  /* padding: 5rem; */
-  /* padding-bottom: calc(10rem - 56px); */
-  background-image: url("../../assets/files/background.jpg");
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.aboutme p{
+    text-align: left;
+    font-size: 1.25rem;
 }
-
-.aboutme hr {
-  margin-top: 30px;
-  margin-bottom: 30px;
+.aboutme li{
+    font-size: 1.125rem;
 }
-
-.aboutme h1 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-}
-
-.aboutme p {
-  font-weight: 300;
-}
-
-@media (min-width: 768px) {
-  .aboutme p {
-    font-size: 1.15rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .aboutme {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  .aboutme h1 {
-    font-size: 2.5rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .aboutme h1 {
-    font-size: 3rem;
-  }
+.aboutme h3{
+    padding-top: 1rem;
 }

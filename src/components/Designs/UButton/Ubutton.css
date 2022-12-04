@@ -1,0 +1,7 @@
+#ubutton div {
+    width: 10rem;
+    height: 10rem;
+    background: red;
+    border-left: 100px solid transparent;
+
+}

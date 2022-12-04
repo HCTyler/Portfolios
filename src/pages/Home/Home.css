@@ -1,0 +1,114 @@
+.home {
+  height: 92vh;
+  max-height: 100vh;
+  /* padding: 5rem; */
+  /* padding-bottom: calc(10rem - 56px); */
+  background-image: url("../../assets/files/background.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.home hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.home h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.home p {
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  .home p {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .home {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .home h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home h1 {
+    font-size: 3rem;
+  }
+  .home p {
+    font-size: 1.25rem;
+  }
+}
+
+.transitionbutton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+.transitionbutton section{
+  display: flex;
+  align-items: center;
+}
+.transitionbutton svg {
+  color:var(--primaryColor);
+   padding: 1rem;
+   display: flex;
+   flex-direction: row;
+   position: relative;
+   opacity: 1;
+   visibility: visible;
+   transition:
+       opacity 1s,
+       visibility 1.5s;
+
+}
+
+.transitionbutton text {
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   font-size: 0;
+   z-index: 2;
+   border: 1em;
+   color: var(--lightaccent);
+   transition:
+       font-size 1s,
+       box-shadow 2s;
+}
+.transitionbutton a{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding:0 1rem;
+}
+
+.transitionbutton a:hover>text {
+   visibility: visible;
+   overflow: visible;
+   font-size: 1.25rem;
+   text-shadow: 1px 1px rgb(30, 30, 30);
+
+}
+
+.transitionbutton a:active>text {
+   color: rgb(20, 20, 20);
+   text-shadow: 1px 1px rgb(10, 38, 255);
+}
+
+.transitionbutton a:hover>svg {
+   visibility: hidden;
+   opacity: 0;
+}
