@@ -5,6 +5,7 @@ import { capitalizeFirstLetter } from "../../utils/helpers"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faDesktop } from "@fortawesome/free-solid-svg-icons"
+import Header from "../../components/Header"
 
 function Portfolio() {
     const [pages] = useState([
@@ -20,19 +21,16 @@ function Portfolio() {
     }
 
     return (
-        // <hr className=" my-4 mx-auto" />
         <div id="Project" className="cover">
-            <h1 className="text-center text-white">{capitalizeFirstLetter(currentPage.name)}</h1>
+            <Header name={currentPage.name} />
             <article >
-                {ProjectDatas.map(( ProjectData, index ) => {
+                {ProjectDatas.map((ProjectData, index) => {
                     return (
-                        <div class="major" onClick={toggler} onMouseEnter={() => setToggle(true) }key={index}>
+                        <div class="major" onClick={toggler} onMouseEnter={() => setToggle(true)} key={index}>
                             <div className="fade-box">
                                 <div className="fade-image" />
                                 <img src={ProjectData.image} alt={ProjectData.alt} />
                                 <div className="fade-text">
-                                    {/* <header>{name}</header>
-                                    <p>{description}</p> */}
                                     {toggle ?
                                         <span>
                                             <header>{ProjectData.name}</header>
@@ -40,7 +38,6 @@ function Portfolio() {
                                             <p>...click for more information</p>
                                         </span> : <span>
                                             <header>Languages Used:</header>
-                                            {/* <p>{ProjectData.skills}</p> */}
                                             {ProjectData.skills.map((skills, index) => {
                                                 return (
                                                     <div key={index}>
