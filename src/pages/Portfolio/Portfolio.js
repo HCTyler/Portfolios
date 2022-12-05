@@ -24,7 +24,6 @@ function Portfolio() {
         <div id="Project" className="cover">
             <h1 className="text-center text-white">{capitalizeFirstLetter(currentPage.name)}</h1>
             <article >
-                {/* {ProjectData.map(({ name, image, alt, deployed, github, description, skills }) => { */}
                 {ProjectDatas.map(( ProjectData, index ) => {
                     return (
                         <div class="major" onClick={toggler} onMouseEnter={() => setToggle(true) }key={index}>

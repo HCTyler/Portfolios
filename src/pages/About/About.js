@@ -1,16 +1,17 @@
 import React, { useState } from "react"
 import { capitalizeFirstLetter } from "../../utils/helpers"
 import "./About.css"
-// import Pdf from "../../assets/files/Resume.pdf"
 
 function About() {
-    const Pdf = "https://docs.google.com/document/d/19xC7HYZEElzM0A6s8sSvS-Jsh7W-QVyMCgmYzR9CjUc/export?format=pdf"
     const [pages] = useState([
         {
             name: "about me"
         }
     ])
     const [currentPage] = useState(pages[0])
+
+    const Pdf = "https://docs.google.com/document/d/19xC7HYZEElzM0A6s8sSvS-Jsh7W-QVyMCgmYzR9CjUc/export?format=pdf"
+    
     return (
         <section className="bg-dark contactpage aboutme">
             <div className="container">

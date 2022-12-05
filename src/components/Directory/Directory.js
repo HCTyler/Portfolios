@@ -4,6 +4,7 @@ import Home from "../../pages/Home/Home"
 import Portfolio from "../../pages/Portfolio/Portfolio"
 import Contact from "../../pages/Contact/Contact"
 import About from "../../pages/About/About"
+import Testing from "../../pages/Testing"
 
 
 function Introduction({ currentPage }) {
@@ -18,8 +19,10 @@ function Introduction({ currentPage }) {
         return <Contact />
       case "about me":
         return <About />
+      case "testing":
+        return <Testing />
       default:
-        return <Home />
+        return <Testing />
     }
   }
 
