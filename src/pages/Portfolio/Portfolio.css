@@ -1,8 +1,8 @@
-:root {
+/* :root {
   --textcolor: #121212;
   --texteffect: #dfdfdf;
   --primaryColor: #f05f40;
-}
+} */
 
 #Project {
   display: flex;
@@ -15,7 +15,7 @@
 .cover {
   position: relative;
   background-image: url(../../assets/files/background-old.jpg);
-  background-color: #f05f40;
+  background-color: var(--primaryColor);
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -73,12 +73,12 @@
   font-size: 1.4rem;
   width: 100%;
   /* box-shadow: 0 5px 2px -2px whitesmoke; */
-  text-shadow: 1px 1px rgb(246, 247, 255);
+  text-shadow: 1px 1px var(--texteffect);
 
 }
 
 #Project a:active>text {
-  color: rgb(215, 215, 215);
+  color: var(--texteffect);
   text-shadow: 1px 1px var(--primaryColor);
 }
 
@@ -97,8 +97,8 @@
   margin: 1rem;
   position: relative;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.75);
-  box-shadow: 5px 5px rgba(255, 255, 255, 0.75), 10px 10px rgba(255, 255, 255, 0.5), 15px 15px rgba(255, 255, 255, 0.25);
+  background-color: rgba(var(--box-class), 0.75);
+  box-shadow: 5px 5px rgba(var(--box-class), 0.75), 10px 10px rgba(var(--box-class), 0.5), 15px 15px rgba(var(--box-class), 0.25);
   transition: box-shadow 0.5s ease-in-out;
 }
 
@@ -107,7 +107,7 @@
   width: 30rem;
   object-fit: cover;
   justify-content: center;
-  background-color: #f05f40;
+  background-color: var(--primaryColor);
   transition: 1s ease-in-out;
 }
 
@@ -117,7 +117,7 @@
   padding: 1rem;
   text-align: left;
   color: var(--primaryColor);
-  text-shadow: 1px 1px black;
+  text-shadow: 1px 1px var(--textcolor);
 }
 
 .major p {
@@ -145,7 +145,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: rgb(230, 218, 218, 0.9);
+  background-color: rgba(var(--box-background), 0.9);
 }
 
 .major section a {
@@ -155,7 +155,7 @@
 }
 
 .major text {
-  color: black;
+  color: var(--textColor);
 }
 
 
@@ -183,7 +183,7 @@
 }
 
 .major:hover {
-  box-shadow: 5px 5px rgba(255, 255, 255, 0.75), 10px 10px rgba(255, 255, 255, 0.5), -5px -5px rgb(255, 255, 255);
+  box-shadow: 5px 5px rgba(var(--box-class), 0.75), 10px 10px rgba(var(--box-class), 0.5), -5px -5px rgba(var(--box-class));
 
 }
 

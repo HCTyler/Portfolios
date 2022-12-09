@@ -1,3 +1,4 @@
+
 .home {
   height: 92vh;
   max-height: 100vh;
@@ -99,13 +100,13 @@
    visibility: visible;
    overflow: visible;
    font-size: 1.25rem;
-   text-shadow: 1px 1px rgb(30, 30, 30);
+   text-shadow: 1px 1px var(--texteffect);
 
 }
 
 .transitionbutton a:active>text {
-   color: rgb(20, 20, 20);
-   text-shadow: 1px 1px rgb(10, 38, 255);
+   color: var(--textcolor);
+   text-shadow: 1px 1px rgba(var(--primaryColor));
 }
 
 .transitionbutton a:hover>svg {

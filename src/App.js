@@ -1,8 +1,10 @@
 import React, { useState } from "react"
+import './index.css';
 import Header from "./components/Directory/Header"
 import Introduction from "./components/Directory/Directory"
 import Navbar from "./components/Navbar/Navbar"
 import Footer from "./components/Footer/Footer"
+
 
 
 

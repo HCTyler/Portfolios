@@ -15,8 +15,8 @@
     padding: 0.664rem 1rem;
     font-size: 0.95rem;
     line-height: 1.125rem;
-    color: #495057;
-    border: 1px solid #becad6;
+    color: var(--tertiaryColor);
+    border: 2px solid var(--darkAccent);
     font-weight: 300;
     border-radius: 0.375rem;
     transition: border-color 250ms cubic-bezier(0.27, 0.01, 0.38, 1.06), box-shadow 250ms cubic-bezier(0.27, 0.01, 0.38, 1.06);
@@ -24,12 +24,12 @@
 }
 
 .form-control:hover {
-    border-color: #f05f40;
+    border-color: var(--primaryColor)
 }
 
 .form-control:focus {
-    color: #495057;
-    border-color: #f05f40;
+    color: var(--tertiaryColor);
+    border-color: var(--darkAccent);
     box-shadow: 0 0.313rem 0.719rem rgba(0, 123, 255, 0.1), 0 0.156rem 0.125rem rgba(0, 0, 0, 0.06);
 }
 
@@ -38,20 +38,20 @@
 }
 
 .form-control::-webkit-input-placeholder {
-    color: #868e96;
+    color: var(--darkAccent);
 }
 
 .form-control:-ms-input-placeholder {
-    color: #868e96;
+    color: var(--darkAccent);
 }
 
 .form-control::placeholder {
-    color: #868e96;
+    color: var(--darkAccent);
 }
 
 .form-control:disabled,
 .form-control[readonly] {
-    background-color: #f5f6f7;
+    background-color: black;
 }
 
 .form-control:disabled:hover,

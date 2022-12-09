@@ -48,13 +48,13 @@
      visibility: visible;
      overflow: visible;
      font-size: 1rem;
-     text-shadow: 1px 1px rgb(246, 247, 255);
+     text-shadow: 1px 1px var(--lightAccent);
 
  }
 
  footer a:active>text {
-     color: rgb(215, 215, 215);
-     text-shadow: 1px 1px rgb(10, 38, 255);
+     color: var(--primaryColor);
+     text-shadow: 1px 1px var(--darkAccent);
  }
 
  footer a:hover>svg {

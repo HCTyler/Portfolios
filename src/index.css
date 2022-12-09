@@ -1,9 +1,14 @@
 :root {
-  --primaryColor: #f05f40;
-  --secondaryColor: #ee4b28;
+  --primaryColor: #ee4b28;
+  --secondaryColor: #f05f40;
   --tertiaryColor: #212529;
   --darkAccent: #868e96;
   --lightAccent: #fff;
+  --textcolor: #121212;
+  --texteffect: #dfdfdf;
+  --box-class: 255, 255, 255;
+  --box-background: 230, 218, 218;
+  --box-shadow:33, 37, 41;
 }
 
 /* -----------------------------------------RESET CSS-------------------------------------- */
