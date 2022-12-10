@@ -1,7 +1,6 @@
 import "./Portfolio.css"
 import React, { useState } from "react"
 import ProjectDatas from "../../components/ProjectData"
-import { capitalizeFirstLetter } from "../../utils/helpers"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faDesktop } from "@fortawesome/free-solid-svg-icons"
