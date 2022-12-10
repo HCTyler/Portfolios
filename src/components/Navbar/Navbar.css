@@ -1,14 +1,15 @@
 #mainNav {
     border-bottom: 1px solid rgba(var(--box-class), 0.1);
     background-color: var(--lightAccent);
-    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+    /* font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; */
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     transition: all 0.2s;
-    box-shadow: 0 5px 10px 0 rgba(var(--box-shadow));
+    box-shadow: 0px 2px 5px 1px rgba(var(--box-class));
 }
 
 #mainNav .navbar-brand {
+    font-size: 150%;
     font-weight: 700;
     text-transform: uppercase;
     color: var(--primaryColor);
@@ -17,7 +18,8 @@
 
 #mainNav .navbar-brand:focus,
 #mainNav .navbar-brand:hover {
-    color: var(--primaryColor);
+    color: var(--tertiaryColor);
+    cursor: pointer;
 }
 
 #mainNav .navbar-nav>li.nav-link,
@@ -32,6 +34,7 @@
 #mainNav .navbar-nav>li.nav-link:hover,
 #mainNav .navbar-nav>li.nav-link:focus:hover {
     color: var(--primaryColor);
+    box-shadow: 1px 1px 2px 0px rgba(var(--box-shadow), 0.2);
 }
 
 #mainNav .navbar-nav>li.nav-link.active,
@@ -57,7 +60,7 @@
 
     #mainNav .navbar-brand:focus,
     #mainNav .navbar-brand:hover {
-        color: var(--secondaryColor);
+        color: var(--tertiaryColor);
     }
 
     #mainNav .navbar-nav>li.nav-link {
